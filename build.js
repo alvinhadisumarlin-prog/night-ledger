@@ -1,11 +1,11 @@
 #!/usr/bin/env node
 /*
- * The Night Ledger — static site build.
+ * The Night Ledger static site build.
  * Reads site.json + every stories/*.json and renders a self-contained dist/.
  * Zero dependencies. Run:  node build.js   (output: dist/)
  *
  * To add a story: drop one stories/<CODE>.json file and push.
- * The GitHub Action rebuilds and deploys — no manual regenerate.
+ * The GitHub Action rebuilds and deploys; no manual regenerate.
  * The entry markup pattern is owned here so content stays a pure-data drop-in.
  */
 'use strict';
@@ -21,7 +21,7 @@ const site = JSON.parse(fs.readFileSync(path.join(ROOT, 'site.json'), 'utf8'));
 let template = fs.readFileSync(path.join(ROOT, 'src', 'template.html'), 'utf8');
 
 // --- load the library of contained stories ---------------------------------
-// Files starting with "_" are scratch/template files — never rendered.
+// Files starting with "_" are scratch/template files, never rendered.
 const storyFiles = fs.readdirSync(STORIES_DIR).filter((f) => f.endsWith('.json') && !f.startsWith('_'));
 const stories = storyFiles.map((f) => {
   try {
@@ -103,7 +103,7 @@ for (const sec of site.sections) {
   </div>
   <div class="section-rule"></div>
 
-${cards}
+${sec.intro ? `  <p style="color:var(--smoke);font-size:15px;margin-top:-8px;">${esc(sec.intro)}</p>\n\n` : ''}${cards}
 
   <p><a class="to-top" href="#top">↑ Back to the index</a></p>
 
@@ -121,7 +121,7 @@ sectionsHtml +=
     <h2>To Be Collected</h2>
   </div>
   <div class="section-rule"></div>
-  <p style="color:var(--smoke);font-size:15px;margin-top:-8px;">Reserved codes for entries still to be written — first-hand accounts especially welcome.</p>
+  <p style="color:var(--smoke);font-size:15px;margin-top:-8px;">Reserved codes for entries still to be written; first-hand accounts especially welcome.</p>
   <ul class="stub-list">
 ${stubs}
   </ul>
@@ -147,7 +147,7 @@ ${items}
 indexHtml +=
 `    <p class="index-sec">★ To Be Collected</p>
     <ul>
-      <li><span class="ix-code">—</span> <a href="#sec-to-be-collected">Reserved codes (${(site.toCollect || []).length})</a></li>
+      <li><span class="ix-code">★</span> <a href="#sec-to-be-collected">Reserved codes (${(site.toCollect || []).length})</a></li>
     </ul>`;
 
 // --- fill the template -----------------------------------------------------
@@ -183,4 +183,4 @@ for (const asset of ['favicon.svg', 'og-image.png']) {
 fs.writeFileSync(path.join(DIST, '.nojekyll'), '');
 
 const total = stories.length;
-console.log(`Built dist/ — ${total} stories across ${site.sections.length} sections, ${(site.toCollect || []).length} reserved codes.`);
+console.log(`Built dist/ with ${total} stories across ${site.sections.length} sections, ${(site.toCollect || []).length} reserved codes.`);

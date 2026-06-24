@@ -1,0 +1,17 @@
+{
+  "code": "IN-001",
+  "section": "bestiary",
+  "order": 110,
+  "name": "Churel",
+  "alias": "Chudail · the backward-footed ghost of a woman dead in childbirth, who lures kinsmen and drains their youth",
+  "tags": { "origin": "South Asian", "type": "Vengeful revenant", "region": "IN · PK · BD · NP", "dread": 4 },
+  "body": [
+    "You see the beauty before you see anything wrong, a young woman waiting at the village edge or the cremation ground at dusk, lovely in a way that makes a man forget the hour. She smiles, and the smile is warm, and only if you look down do you find the warning: her feet are turned backward, heels where the toes should be, so that her footprints walk away from where she stands. By then she has already taken your arm.",
+    "She is born of grief and grievance, the spirit of a woman who died in childbirth or in pregnancy, or who was neglected, mistreated, or denied her proper rites by her own family. Such a death is held to be impure, and the impurity festers into hunger. The churel returns disguised as someone desirable, often to entrap the very men of the household that failed her, brothers, husbands, sons, leading them into the dark and feeding on their vitality. A man she takes is found wasted and white-haired, aged forty years in a night, emptied of the youth she was owed and never given. The bargain at her heart is brutal and fair in its own grammar: she takes back from the living what the living took from her.",
+    "What lingers is the arithmetic of neglect, the sense that she is less a monster than a debt come due. Old women still warn that you should not accept the kindness of a stranger met at twilight near water or a burning ground, and that you should always, always look at the feet. A man who survives her remembers her hands as cold, and her voice as gentle, and the morning light showing him a face in the mirror that is decades older than the one he carried to bed."
+  ],
+  "note": [
+    "The protections are rites of respect for the dead. Across the region, women who died in childbirth or other \"unclean\" deaths were given careful, sometimes unusual burials so the soul would rest: bodies might be buried face down, the feet bound or nailed, iron placed in the grave, or mustard seeds scattered along the path home so the returning spirit would be compelled to count them and never reach the door. Naming her and performing the proper funeral rites she was denied is the deeper cure.",
+    "The churel (also chudail, churail, or churreyl) is told across India, Pakistan, Bangladesh, and Nepal, with cousins in wider South and Southeast Asian lore such as the pontianak. The backward feet are her constant signature. The tale carries an older social weight: it grew up around the real fear and stigma surrounding maternal death and the mistreatment of low-status or widowed women, so that the ghost is, in part, a reckoning aimed back at the household that wronged her."
+  ]
+}

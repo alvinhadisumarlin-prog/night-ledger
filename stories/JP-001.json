@@ -1,0 +1,17 @@
+{
+  "code": "JP-001",
+  "section": "bestiary",
+  "order": 100,
+  "name": "Kuchisake-onna",
+  "alias": "The Slit-Mouthed Woman · a masked figure who asks if she is pretty, and kills you for either answer",
+  "tags": { "origin": "Japanese", "type": "Vengeful spirit", "region": "JP", "dread": 4 },
+  "body": [
+    "First you notice the mask, a surgical white that floats at the edge of a sodium streetlight, and then the voice, soft and almost shy, asking whether you think she is pretty. She is alone on a quiet road at the hour when the last train has gone and the convenience stores have thinned to a single humming sign. She wears a long coat, and her eyes above the cloth are patient. There is nothing wrong with her at all, which is exactly the thing that should make you run.",
+    "She is a woman wronged, disfigured in life or in jealous rage, and she returns to put her question to anyone she finds walking alone. If you say she is ugly, she cuts you down where you stand. If you say she is pretty, she draws the mask away to show a mouth slit from ear to ear, a red grin held open by old wounds, and she asks once more: am I pretty now? The honest answer and the flattering answer are both confessions, and she carries scissors or a long blade to collect on either. The only seams in her trap are ambiguity and delay. Tell her you are not sure, ask her a question back, throw hard sweets for her to gather, or say the word for hair pomade, which is said to remind her of the doctor who ruined her and to buy the moment you need to turn the corner.",
+    "What lingers is the courtesy of it, the way she waits to be answered rather than simply striking, as though manners were the last human thing she kept. People who claim to have met her remember the question more than the mouth. Children walking home in groups still chant the escape words under their breath, and somewhere a parent has told them that if the woman ever asks, you answer with another question and you do not look back at the scissors at her side."
+  ],
+  "note": [
+    "The classic wards are stalling tactics rather than true protection: an ambiguous reply such as \"you are average\" confuses her long enough to flee, and the word \"pomade\" (said three or six times in some tellings) is a charm tied to the surgeon of her origin story. Throwing bekkou-ame or other hard candy makes her stop to pick it up, a trick borrowed from older fox and ghost lore where greedy spirits are delayed by scattered objects.",
+    "Kuchisake-onna surged into a nationwide panic across Japan in 1979, when rumours spread through schoolchildren that she chased her victims at supernatural speed, and police and teachers fielded real reports. She revived again around 2004 and travels in regional variants: some give her a sickle or a scythe instead of scissors, some place her near schools or tunnels, and Korean retellings echo the same masked question. The tale belongs to the kaidan tradition of urban whispered horror, passed mouth to mouth on the walk home after dark."
+  ]
+}

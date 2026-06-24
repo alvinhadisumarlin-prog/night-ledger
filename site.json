@@ -2,9 +2,9 @@
   "meta": {
     "title": "The Night Ledger",
     "eyebrow": "A Private Compendium",
-    "sub": "Hauntings, creatures, and uneasy ground of Southeast & East Asia — collected, catalogued, kept.",
+    "sub": "Hauntings, creatures, and uneasy ground of Southeast & East Asia: collected, catalogued, kept.",
     "epigraph": "Some stories are told to frighten children. These are kept to remind the rest of us that the dark was here long before we built our lights against it.",
-    "epigraphSource": "— Keeper's note, entry I",
+    "epigraphSource": "From the Keeper's note, entry I",
     "footer": "The Night Ledger · kept after dark"
   },
   "sections": [
@@ -16,41 +16,39 @@
     {
       "id": "haunted-singapore",
       "num": "II.",
-      "title": "Haunted Ground — Singapore"
+      "title": "Haunted Ground: Singapore"
+    },
+    {
+      "id": "apocrypha",
+      "num": "III.",
+      "title": "Apocrypha",
+      "intro": "Tales without a clean source: half-remembered, second-hand, or invented outright at the keeper's hand and told as though they had always been here. Read this section as fiction, and keep one eye on the dark anyway."
     }
   ],
   "toCollect": [
     {
-      "name": "Mae Nak Phra Khanong",
-      "code": "TH-001"
-    },
-    {
-      "name": "Krasue (Thai cousin of the Penanggalan)",
-      "code": "TH-002"
-    },
-    {
-      "name": "Aswang & Manananggal",
-      "code": "PH-001"
-    },
-    {
-      "name": "White Lady of Balete Drive",
+      "name": "Manananggal",
       "code": "PH-002"
     },
     {
-      "name": "Kuchisake-onna · the slit-mouthed woman",
-      "code": "JP-001"
+      "name": "White Lady of Balete Drive",
+      "code": "PH-003"
     },
     {
-      "name": "Hungry Ghost Festival — offerings & rules",
+      "name": "Hungry Ghost Festival: offerings & rules",
       "code": "CN-002"
     },
     {
-      "name": "Churel",
-      "code": "IN-001"
+      "name": "Langsuir",
+      "code": "MY-007"
     },
     {
-      "name": "Hantu Tetek",
-      "code": "MY-006"
+      "name": "Nat spirits (Burmese)",
+      "code": "MM-001"
+    },
+    {
+      "name": "Preta, the Khmer hungry ghost",
+      "code": "KH-001"
     }
   ]
 }

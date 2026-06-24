@@ -1,0 +1,17 @@
+{
+  "code": "MY-006",
+  "section": "bestiary",
+  "order": 120,
+  "name": "Hantu Tetek",
+  "alias": "The Breast Ghost · a giant female spirit that smothers stragglers beneath enormous breasts to herd children indoors before dark",
+  "tags": { "origin": "Malay / Nusantara", "type": "Smothering spirit", "region": "MY · SG", "dread": 2 },
+  "body": [
+    "You feel her before the light fails, a heaviness in the warm air of dusk, the sense of something vast and soft moving where there should only be the last play of evening. She is enormous, a towering female shape whose chest hangs immense and low, and she favours the in-between places: the back of a house, the edge of a field, the path a child takes when the grown-ups have already called twice and been ignored.",
+    "She hunts the ones who stray, those who linger outdoors after the maghrib hour or wander somewhere they were told not to go. She does not chase so much as gather, looming over the straggler and folding them into the suffocating dark beneath her great breasts, pressing the breath and the wandering out of them until they are lost. This is the bargain her tale enforces: the dusk belongs to the spirits, and a child who refuses to come in when called has stepped out of the safe and ordinary world into hers. She is recognised less by sight than by the threat of her, the name spoken to make a lingering child suddenly remember the door.",
+    "What lingers is how small the punishment really is, smothering rather than killing, a fright meant to teach rather than to end. She is the bedtime monster of the archipelago, half warning and half joke, and yet the image stays: a shape too large for the doorway, a softness that is not comfort, the certainty that being late home is the same as being taken. Parents who use her name still lower their voices at the word tetek, and the children come running."
+  ],
+  "note": [
+    "There is no charm to bargain with, because she is chiefly a guardian-bogey: the true ward is simply obedience, coming indoors before nightfall and the maghrib prayer, and not wandering off alone at dusk. Adults invoke her exactly to produce that behaviour, so the most reliable protection against Hantu Tetek is to already be safely inside when she is said to walk.",
+    "Hantu Tetek belongs to the rich hantu (spirit) tradition of Malay and wider Nusantara folklore, told across Malaysia and Singapore and recognisable in neighbouring Indonesian lore. She sits among the gentler, comedic-grotesque spirits used to manage children, alongside cautionary figures of the dusk, and is generally remembered as uncanny and smothering rather than truly lethal, more a creature of nursery threat than of the graveyard."
+  ]
+}
