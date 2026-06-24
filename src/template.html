@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Night Ledger</title>
+<meta name="description" content="A private compendium of Southeast & East Asian horror folklore and Singapore haunted-place legends — creatures, hauntings, and uneasy ground, collected and catalogued.">
+<meta name="theme-color" content="#0b0a0c">
+<meta name="color-scheme" content="dark">
+<link rel="canonical" href="https://alvinhadisumarlin-prog.github.io/night-ledger/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="The Night Ledger">
+<meta property="og:title" content="The Night Ledger">
+<meta property="og:description" content="Hauntings, creatures, and uneasy ground of Southeast & East Asia — collected, catalogued, kept.">
+<meta property="og:url" content="https://alvinhadisumarlin-prog.github.io/night-ledger/">
+<meta property="og:image" content="https://alvinhadisumarlin-prog.github.io/night-ledger/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Night Ledger">
+<meta name="twitter:description" content="Hauntings, creatures, and uneasy ground of Southeast & East Asia — collected, catalogued, kept.">
+<meta name="twitter:image" content="https://alvinhadisumarlin-prog.github.io/night-ledger/og-image.png">
+
+<style>
+  /* ---------- self-hosted fonts (zero external dependencies) ---------- */
+  @font-face{font-family:'Cinzel';font-style:normal;font-weight:500;font-display:swap;src:url('fonts/cinzel-500.woff2') format('woff2');}
+  @font-face{font-family:'Cinzel';font-style:normal;font-weight:700;font-display:swap;src:url('fonts/cinzel-700.woff2') format('woff2');}
+  @font-face{font-family:'Spectral';font-style:normal;font-weight:300;font-display:swap;src:url('fonts/spectral-300.woff2') format('woff2');}
+  @font-face{font-family:'Spectral';font-style:normal;font-weight:400;font-display:swap;src:url('fonts/spectral-400.woff2') format('woff2');}
+  @font-face{font-family:'Spectral';font-style:normal;font-weight:500;font-display:swap;src:url('fonts/spectral-500.woff2') format('woff2');}
+  @font-face{font-family:'Spectral';font-style:italic;font-weight:400;font-display:swap;src:url('fonts/spectral-400-italic.woff2') format('woff2');}
+  @font-face{font-family:'IBM Plex Mono';font-style:normal;font-weight:400;font-display:swap;src:url('fonts/ibmplexmono-400.woff2') format('woff2');}
+  @font-face{font-family:'IBM Plex Mono';font-style:normal;font-weight:500;font-display:swap;src:url('fonts/ibmplexmono-500.woff2') format('woff2');}
+
+  :root{
+    --void:#0b0a0c;
+    --ash:#161219;
+    --ash-edge:#241d2b;
+    --bone:#e8e2d4;
+    --joss:#d9a441;
+    --joss-dim:#8f6f31;
+    --oxblood:#8f2222;
+    --oxblood-bright:#b53030;
+    --smoke:#7a7280;
+  }
+
+  *{box-sizing:border-box;}
+
+  html{scroll-behavior:smooth;}
+
+  body{
+    margin:0;
+    background:var(--void);
+    color:var(--bone);
+    font-family:'Spectral',Georgia,serif;
+    font-weight:300;
+    font-size:18px;
+    line-height:1.7;
+    letter-spacing:.1px;
+    -webkit-font-smoothing:antialiased;
+    position:relative;
+    overflow-x:hidden;
+  }
+
+  /* nocturnal grain + vignette */
+  body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    z-index:2;
+    background:
+      radial-gradient(120% 90% at 50% -10%, transparent 40%, rgba(0,0,0,.55) 100%),
+      radial-gradient(80% 60% at 50% 120%, transparent 50%, rgba(0,0,0,.5) 100%);
+  }
+  body::after{
+    content:"";
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    z-index:1;
+    opacity:.035;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  .wrap{
+    position:relative;
+    z-index:3;
+    max-width:760px;
+    margin:0 auto;
+    padding:clamp(28px,7vw,72px) clamp(20px,5vw,40px) 120px;
+  }
+
+  /* ---------- masthead ---------- */
+  .mast{
+    text-align:center;
+    padding-bottom:clamp(28px,6vw,48px);
+    border-bottom:1px solid var(--ash-edge);
+  }
+  .mast .eyebrow{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:11px;
+    letter-spacing:.32em;
+    text-transform:uppercase;
+    color:var(--joss-dim);
+    margin:0 0 18px;
+  }
+  .mast h1{
+    font-family:'Cinzel',serif;
+    font-weight:700;
+    font-size:clamp(34px,9vw,62px);
+    line-height:1.05;
+    letter-spacing:.04em;
+    margin:0;
+    color:var(--bone);
+    text-shadow:0 0 28px rgba(217,164,65,.08);
+  }
+  .mast .sub{
+    font-style:italic;
+    color:var(--smoke);
+    font-size:clamp(15px,3.6vw,18px);
+    margin:16px auto 0;
+    max-width:42ch;
+  }
+  /* the burning ember rule — signature element */
+  .ember{
+    width:min(220px,60%);
+    height:2px;
+    margin:30px auto 0;
+    border:0;
+    background:linear-gradient(90deg,transparent,var(--joss-dim) 25%,var(--joss) 50%,var(--joss-dim) 75%,transparent);
+    box-shadow:0 0 18px 1px rgba(217,164,65,.35);
+    animation:smoulder 5.5s ease-in-out infinite;
+  }
+  @keyframes smoulder{
+    0%,100%{opacity:.55;box-shadow:0 0 12px 0 rgba(217,164,65,.22);}
+    50%{opacity:1;box-shadow:0 0 22px 2px rgba(217,164,65,.45);}
+  }
+  .epigraph{
+    text-align:center;
+    font-style:italic;
+    color:var(--smoke);
+    max-width:46ch;
+    margin:clamp(32px,7vw,52px) auto;
+    font-size:16px;
+    line-height:1.75;
+  }
+  .epigraph span{display:block;font-style:normal;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--joss-dim);margin-top:14px;}
+
+  /* ---------- legend / how it works ---------- */
+  .legend{
+    background:var(--ash);
+    border:1px solid var(--ash-edge);
+    border-radius:4px;
+    padding:22px 24px;
+    margin:0 0 clamp(40px,8vw,64px);
+  }
+  .legend h2{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:11px;
+    letter-spacing:.28em;
+    text-transform:uppercase;
+    color:var(--joss);
+    margin:0 0 14px;
+    font-weight:500;
+  }
+  .legend p{margin:0 0 10px;font-size:15px;color:#cfc8bd;}
+  .legend p:last-child{margin-bottom:0;}
+  .legend code{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:12.5px;
+    color:var(--joss);
+    background:rgba(217,164,65,.08);
+    padding:1px 6px;
+    border-radius:3px;
+  }
+
+  /* ---------- the index / navigation ---------- */
+  .index{
+    background:var(--ash);
+    border:1px solid var(--ash-edge);
+    border-radius:4px;
+    padding:22px 24px;
+    margin:0 0 clamp(40px,8vw,64px);
+  }
+  .index h2{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:11px;
+    letter-spacing:.28em;
+    text-transform:uppercase;
+    color:var(--joss);
+    margin:0 0 16px;
+    font-weight:500;
+  }
+  .index .index-sec{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:10.5px;
+    letter-spacing:.2em;
+    text-transform:uppercase;
+    color:var(--oxblood-bright);
+    margin:16px 0 8px;
+  }
+  .index .index-sec:first-of-type{margin-top:0;}
+  .index ul{list-style:none;padding:0;margin:0;}
+  .index li{
+    display:flex;
+    align-items:baseline;
+    gap:12px;
+    padding:5px 0;
+  }
+  .index a{
+    color:#cfc8bd;
+    text-decoration:none;
+    border-bottom:1px solid transparent;
+    transition:color .25s ease, border-color .25s ease;
+  }
+  .index a:hover,.index a:focus-visible{color:var(--joss);border-bottom-color:var(--joss-dim);}
+  .index .ix-code{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:11px;
+    letter-spacing:.12em;
+    color:var(--smoke);
+    flex:0 0 64px;
+  }
+
+  /* ---------- section headers ---------- */
+  .section-head{
+    display:flex;
+    align-items:baseline;
+    gap:16px;
+    margin:clamp(48px,9vw,72px) 0 8px;
+    scroll-margin-top:24px;
+  }
+  .section-head .num{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:13px;
+    color:var(--oxblood-bright);
+    letter-spacing:.1em;
+  }
+  .section-head h2{
+    font-family:'Cinzel',serif;
+    font-weight:500;
+    font-size:clamp(20px,5vw,28px);
+    letter-spacing:.06em;
+    margin:0;
+    color:var(--bone);
+  }
+  .section-rule{height:1px;background:var(--ash-edge);margin:0 0 clamp(28px,5vw,36px);}
+
+  /* ---------- entry card ---------- */
+  .entry{
+    background:linear-gradient(180deg,var(--ash),#120f16);
+    border:1px solid var(--ash-edge);
+    border-radius:5px;
+    padding:clamp(22px,5vw,34px);
+    margin-bottom:26px;
+    position:relative;
+    opacity:0;
+    transform:translateY(18px);
+    animation:rise .7s cubic-bezier(.2,.7,.2,1) forwards;
+    transition:border-color .4s ease, transform .4s ease;
+    scroll-margin-top:24px;
+  }
+  .entry:hover{border-color:var(--joss-dim);transform:translateY(-2px);}
+  @keyframes rise{to{opacity:1;transform:translateY(0);}}
+
+  .entry .code{
+    position:absolute;
+    top:clamp(18px,4vw,26px);
+    right:clamp(18px,4vw,26px);
+    font-family:'IBM Plex Mono',monospace;
+    font-size:11px;
+    letter-spacing:.18em;
+    color:var(--smoke);
+  }
+  .entry h3{
+    font-family:'Cinzel',serif;
+    font-weight:700;
+    font-size:clamp(22px,5.5vw,30px);
+    letter-spacing:.03em;
+    margin:0 56px 4px 0;
+    color:var(--bone);
+  }
+  .entry .alias{
+    font-style:italic;
+    color:var(--smoke);
+    font-size:14.5px;
+    margin:0 0 16px;
+  }
+  .entry .title-rule{
+    height:1px;
+    width:100%;
+    margin:0 0 18px;
+    background:linear-gradient(90deg,var(--joss),transparent 70%);
+    opacity:.5;
+  }
+
+  /* tag pills */
+  .tags{display:flex;flex-wrap:wrap;gap:7px;margin:0 0 18px;}
+  .tag{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:10.5px;
+    letter-spacing:.1em;
+    text-transform:uppercase;
+    padding:3px 9px;
+    border-radius:2px;
+    border:1px solid;
+  }
+  .tag.origin{color:var(--joss);border-color:rgba(217,164,65,.4);background:rgba(217,164,65,.06);}
+  .tag.type{color:var(--smoke);border-color:rgba(122,114,128,.4);}
+  .tag.region{color:#c8bfb1;border-color:rgba(200,191,177,.3);}
+  .tag.dread{color:var(--oxblood-bright);border-color:rgba(181,48,48,.45);background:rgba(143,34,34,.08);letter-spacing:.05em;}
+
+  .entry p{margin:0 0 14px;}
+  .entry p:last-of-type{margin-bottom:0;}
+
+  /* the aside / variants note */
+  .note{
+    margin-top:18px;
+    padding:14px 16px 14px 18px;
+    border-left:2px solid var(--oxblood);
+    background:rgba(143,34,34,.05);
+    font-size:14.5px;
+    color:#c4bcb1;
+  }
+  .note .lbl{
+    display:block;
+    font-family:'IBM Plex Mono',monospace;
+    font-size:10px;
+    letter-spacing:.22em;
+    text-transform:uppercase;
+    color:var(--oxblood-bright);
+    margin-bottom:6px;
+  }
+  .note p{margin:0 0 8px;font-size:14.5px;}
+  .note p:last-child{margin:0;}
+
+  /* to-collect stubs */
+  .stub-list{list-style:none;padding:0;margin:0;}
+  .stub-list li{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:13px;
+    color:var(--smoke);
+    padding:9px 0;
+    border-bottom:1px dashed var(--ash-edge);
+    display:flex;
+    justify-content:space-between;
+    gap:12px;
+  }
+  .stub-list li span{color:var(--joss-dim);}
+
+  /* back-to-index link under each section */
+  .to-top{
+    display:inline-block;
+    font-family:'IBM Plex Mono',monospace;
+    font-size:10px;
+    letter-spacing:.18em;
+    text-transform:uppercase;
+    color:var(--joss-dim);
+    text-decoration:none;
+    margin:4px 0 0;
+    border-bottom:1px solid transparent;
+    transition:color .25s ease,border-color .25s ease;
+  }
+  .to-top:hover,.to-top:focus-visible{color:var(--joss);border-bottom-color:var(--joss-dim);}
+
+  footer{
+    margin-top:clamp(48px,9vw,72px);
+    padding-top:24px;
+    border-top:1px solid var(--ash-edge);
+    text-align:center;
+    font-family:'IBM Plex Mono',monospace;
+    font-size:11px;
+    letter-spacing:.18em;
+    text-transform:uppercase;
+    color:var(--joss-dim);
+  }
+
+  @media (prefers-reduced-motion:reduce){
+    .ember{animation:none;}
+    .entry{animation:none;opacity:1;transform:none;}
+    html{scroll-behavior:auto;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap" id="top">
+
+  <header class="mast">
+    <p class="eyebrow">{{EYEBROW}}</p>
+    <h1>{{TITLE}}</h1>
+    <p class="sub">{{SUB}}</p>
+    <hr class="ember">
+  </header>
+
+  <p class="epigraph">
+    {{EPIGRAPH}}
+    <span>{{EPIGRAPH_SOURCE}}</span>
+  </p>
+
+  <div class="legend">
+    <h2>How the ledger is kept</h2>
+    <p>Every entry carries a <code>catalogue code</code> by origin: <code>MY</code> Malay/Nusantara · <code>CN</code> Chinese · <code>SG</code> Singapore site · <code>TH</code> Thai · <code>PH</code> Filipino · <code>JP</code> Japanese · <code>IN</code> South Asian.</p>
+    <p>Tags read in four bands — <strong style="color:var(--joss)">origin</strong>, <strong style="color:var(--smoke)">type</strong>, <strong style="color:#c8bfb1">region</strong>, and a <strong style="color:var(--oxblood-bright)">dread</strong> rating in diamonds (◆ of five).</p>
+    <p>Each retelling is followed where useful by a <strong style="color:var(--oxblood-bright)">Keeper's note</strong> — variants, wards against the thing, and where the tale is told.</p>
+  </div>
+
+  <nav class="index" aria-label="Index of entries">
+    <h2>The Index</h2>
+{{INDEX}}
+  </nav>
+
+{{SECTIONS}}
+  <footer>
+    {{FOOTER}}
+  </footer>
+
+</div>
+</body>
+</html>

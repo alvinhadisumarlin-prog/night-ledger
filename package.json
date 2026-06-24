@@ -1,0 +1,16 @@
+{
+  "name": "night-ledger",
+  "version": "1.0.0",
+  "description": "The Night Ledger — a static compendium of Southeast & East Asian horror folklore and Singapore haunted-place legends.",
+  "main": "build.js",
+  "scripts": {
+    "build": "node build.js",
+    "og": "node scripts/make-og.js"
+  },
+  "keywords": ["folklore", "static-site", "singapore", "horror"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sharp": "^0.35.2"
+  }
+}
