@@ -21,7 +21,8 @@ const site = JSON.parse(fs.readFileSync(path.join(ROOT, 'site.json'), 'utf8'));
 let template = fs.readFileSync(path.join(ROOT, 'src', 'template.html'), 'utf8');
 
 // --- load the library of contained stories ---------------------------------
-const storyFiles = fs.readdirSync(STORIES_DIR).filter((f) => f.endsWith('.json'));
+// Files starting with "_" are scratch/template files — never rendered.
+const storyFiles = fs.readdirSync(STORIES_DIR).filter((f) => f.endsWith('.json') && !f.startsWith('_'));
 const stories = storyFiles.map((f) => {
   try {
     return JSON.parse(fs.readFileSync(path.join(STORIES_DIR, f), 'utf8'));
