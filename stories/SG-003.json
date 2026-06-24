@@ -1,0 +1,20 @@
+{
+  "code": "SG-003",
+  "section": "haunted-singapore",
+  "order": 30,
+  "name": "Matilda House",
+  "alias": "Istana Woodneuk's quieter cousin · the Punggol mansion",
+  "tags": {
+    "origin": "Singapore site",
+    "type": "Cursed house",
+    "region": "Punggol",
+    "dread": 3
+  },
+  "body": [
+    "A colonial bungalow built in the 1900s, named for a man's late wife, it stood derelict in Punggol for decades while the district emptied and then rebuilt around it. The legend holds that a son cursed the house — or that a grieving mother did — so that no one who tried to move in would ever stay, doors slamming, sleep broken, the living driven out.",
+    "What makes it linger is its survival: the conserved facade now sits inside a modern condominium, the old dread folded into a show-flat, the past kept like a tooth set in new gold."
+  ],
+  "note": [
+    "A good case study in how a legend adapts to redevelopment rather than dying with the building. Track how the story is retold now that the house is a gatehouse for flats."
+  ]
+}

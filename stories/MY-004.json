@@ -1,0 +1,20 @@
+{
+  "code": "MY-004",
+  "section": "bestiary",
+  "order": 40,
+  "name": "Pocong",
+  "alias": "the shroud ghost · the bound dead",
+  "tags": {
+    "origin": "Malay / Nusantara",
+    "type": "Restless dead",
+    "region": "ID · MY · SG",
+    "dread": 3
+  },
+  "body": [
+    "In Muslim burial the body is wrapped in white cloth, the kain kafan, tied at the crown of the head, under the chin, and at the feet. The ties are meant to be loosened in the grave. If they are forgotten, the soul cannot leave — and after forty days it rises still bound, a face peering from a knot of grave-cloth, moving the only way it can: in slow, jolting hops.",
+    "It is not malicious so much as desperate. The Pocong wants only release, and it returns to those who knew it, asking without words to have the binding at last untied."
+  ],
+  "note": [
+    "To free it, the head-tie must be undone — then it rests. Encountered along quiet roads and near fresh graves. The horror is less in malice than in the helplessness of a thing trapped at the threshold and unable to cross."
+  ]
+}

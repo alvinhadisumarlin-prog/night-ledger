@@ -1,0 +1,20 @@
+{
+  "code": "MY-003",
+  "section": "bestiary",
+  "order": 30,
+  "name": "Toyol",
+  "alias": "the spirit child · the little thief",
+  "tags": {
+    "origin": "Malay / Nusantara",
+    "type": "Bound familiar",
+    "region": "SG · MY · ID",
+    "dread": 2
+  },
+  "body": [
+    "A Toyol is a small green-skinned infant spirit, eyes wide and red, raised from a dead fetus by a bomoh and kept in a jar. Its keeper feeds it drops of blood from a pricked toe and sends it out at night to steal — money, gold, small valuables lifted from sleeping households who never feel a thing.",
+    "It has the mind of a toddler, easily delighted and easily fooled, which is its only weakness. A house that suspects a Toyol will leave out beads, marbles, or sand by the door; the creature stops to count and play and forgets why it came, and is gone by morning."
+  ],
+  "note": [
+    "Sudden, unexplained good fortune in a neighbour was the classic accusation. Money kept beside a mirror or a needle is said to repel it. When the keeper dies, the Toyol must be passed on or it torments the family — which is how the jars travel."
+  ]
+}

@@ -10,42 +10,42 @@ works offline and leaks nothing to third parties).
 
 ---
 
-## How it's built
+## How it works
 
-Content lives as pure data in [`entries.json`](entries.json). A tiny
-zero-dependency Node script ([`build.js`](build.js)) renders it into the shipped
-[`index.html`](index.html) using the markup template in
-[`src/template.html`](src/template.html).
+Each story is its own file in [`stories/`](stories/) — a **library of contained
+stories**. Site-level copy (masthead, sections, reserved codes) lives in
+[`site.json`](site.json). On every push, a GitHub Action runs
+[`build.js`](build.js), which renders everything into a self-contained `dist/`
+and deploys it to GitHub Pages.
 
-**Why JSON + a build step (not raw HTML blocks):** adding a story is then just
-adding one object — no copying markup, no risk of a malformed `<article>`. The
-entry markup pattern is owned in one place (`build.js`), so it stays identical
-across every entry and every future addition. The build prints a summary and
-fails loudly on duplicate codes, unknown sections, or unfilled placeholders.
+**You never build or commit HTML by hand.** Add a story file, push, done —
+the Action regenerates and publishes (usually live within a minute).
 
 ```
 night-ledger/
-├── index.html            ← shipped site (generated — do not hand-edit)
-├── entries.json          ← the content (edit this)
-├── build.js              ← renders index.html from entries.json + template
-├── favicon.svg           ← amber diamond mark
-├── og-image.png          ← social/link-preview card (generated)
-├── fonts/                ← self-hosted woff2 (Cinzel, Spectral, IBM Plex Mono)
-├── src/
-│   └── template.html     ← page shell + canonical CSS (design lives here)
-└── scripts/
-    ├── og-image.svg      ← source art for the OG card
-    └── make-og.js        ← renders og-image.png (needs the sharp dev dep)
+├── stories/                ← the library — one file per story (edit/add here)
+│   ├── MY-001.json
+│   └── …
+├── site.json               ← masthead, sections, "to be collected" list
+├── build.js                ← renders dist/ from stories/ + site.json (zero deps)
+├── src/template.html       ← page shell + canonical CSS (design lives here)
+├── fonts/                  ← self-hosted woff2 (Cinzel, Spectral, IBM Plex Mono)
+├── favicon.svg             ← amber diamond mark
+├── og-image.png            ← social/link-preview card (generated, committed)
+├── scripts/                ← og-image.svg + make-og.js (regenerate the OG card)
+└── .github/workflows/      ← deploy.yml (build + publish on push)
 ```
 
-`index.html` is a build artifact but **is committed** so GitHub Pages can serve
-it directly with no CI step.
+`dist/` is a build artifact — it is **gitignored** and produced fresh by the
+Action. Nothing generated is committed.
 
 ---
 
-## Add a new entry
+## Add a story (the whole loop)
 
-1. Open `entries.json` and add one object to the `entries` array:
+1. **Get the entry as JSON** from the companion Claude project (it outputs
+   exactly this shape).
+2. **Save it** as `stories/<CODE>.json`, e.g. `stories/TH-001.json`:
 
    ```json
    {
@@ -60,7 +60,7 @@ it directly with no CI step.
        "dread": 4
      },
      "body": [
-       "The retelling — lead with the sense that announces it (a smell, a sound, a sight).",
+       "Lead with the sense that announces it (a smell, a sound, a sight).",
        "Give the rule that governs it, and end on the thing that lingers."
      ],
      "note": [
@@ -69,59 +69,68 @@ it directly with no CI step.
    }
    ```
 
-   - `code` — unique catalogue code (`MY` Malay/Nusantara · `CN` Chinese ·
-     `SG` Singapore site · `TH` Thai · `PH` Filipino · `JP` Japanese ·
-     `IN` South Asian). Becomes the entry's anchor (`#TH-001`).
-   - `section` — must match a section `id` in the `sections` array
-     (`bestiary` or `haunted-singapore`). To add a new section, append to
-     `sections` first.
-   - `dread` — integer 1–5; rendered as ◆ of five.
-   - `note` — optional; omit it for no Keeper's note.
-   - Entries appear in the order they sit in the array; the nav index and the
-     section are generated automatically.
-
-2. Rebuild:
+3. **Push:**
 
    ```bash
-   npm run build      # or: node build.js
+   git add stories/TH-001.json
+   git commit -m "content: add Name of the thing (TH-001)"
+   git push
    ```
 
-3. Commit & push (see Deploy). Content authored in the companion Claude project
-   arrives as ready-to-paste JSON objects — drop them in and rebuild.
+   The Action builds and deploys automatically. That's it — no `npm run build`.
 
-> Tip: move a code from `toCollect` to a full `entries` object as each
-> reserved story gets written.
+### Field reference
+
+- **`code`** — unique catalogue code; becomes the anchor (`#TH-001`). Prefix by
+  origin: `MY` Malay/Nusantara · `CN` Chinese · `SG` Singapore site · `TH` Thai
+  · `PH` Filipino · `JP` Japanese · `IN` South Asian.
+- **`section`** — must match a section `id` in `site.json` (`bestiary` or
+  `haunted-singapore`). To add a section, add it to `site.json` first.
+- **`order`** *(optional)* — integer; lower sorts first within a section
+  (existing entries use 10, 20, 30…). Omit it and the story simply appends to
+  its section (sorted by code). Add one only to place it precisely.
+- **`dread`** — integer 1–5; renders as ◆ of five.
+- **`note`** *(optional)* — omit the field entirely for no Keeper's note.
+- Filename should match the code (`stories/TH-001.json`) for tidiness; the build
+  reads every `*.json` in `stories/` regardless of filename.
+
+> When a reserved story gets written, also delete its line from `toCollect` in
+> `site.json`.
+
+The build **fails loudly** (so a bad story can't ship) on: missing code/name,
+duplicate code, unknown section, or malformed JSON.
 
 ---
+
+## Preview locally (optional)
+
+You only need this if you want to see changes before pushing:
+
+```bash
+node build.js          # writes dist/
+# open dist/index.html in a browser
+```
+
+No dependencies required — `build.js` is plain Node.
 
 ## Regenerate the social card
 
-Only needed if you change the title/subtitle art in `scripts/og-image.svg`.
-Requires the one dev dependency:
+Only if you change the art in `scripts/og-image.svg`:
 
 ```bash
 npm install     # installs sharp (dev-only, never shipped)
-npm run og       # writes og-image.png (1200×630)
+npm run og       # writes og-image.png (1200×630) — commit it
 ```
 
 ---
 
-## Deploy (GitHub Pages)
+## Deploy / setup notes
 
-The repo is published from the `main` branch root via GitHub Pages.
-
-```bash
-npm run build
-git add -A
-git commit -m "content: add <entry>"
-git push
-```
-
-Pages redeploys automatically on push (usually live within a minute). To set it
-up from scratch: **Settings → Pages → Source: Deploy from a branch → `main` /
-`(root)`**.
-
----
+- Pages source is **GitHub Actions** (Settings → Pages). The
+  [`deploy.yml`](.github/workflows/deploy.yml) workflow builds `dist/` and
+  publishes it on every push to `main`.
+- To deploy manually: Actions tab → "Build & deploy to GitHub Pages" → Run
+  workflow.
 
 ## Design notes
 
@@ -129,8 +138,6 @@ up from scratch: **Settings → Pages → Source: Deploy from a branch → `main
   canonical design and live in `src/template.html` — **implemented, not
   redesigned**.
 - Fonts: **Cinzel** (display), **Spectral** (body), **IBM Plex Mono** (labels),
-  all self-hosted under `fonts/` (SIL Open Font License).
+  self-hosted under `fonts/` (SIL Open Font License).
 - Honours `prefers-reduced-motion`, keyboard focus is visible, mobile-first.
-- The original on-page "Entry Template" block was dropped in favour of the JSON
-  template above — an on-page HTML template would no longer reflect how entries
-  are actually added.
+- Content is original prose / public-domain folklore — safe to publish publicly.

@@ -1,0 +1,20 @@
+{
+  "code": "MY-005",
+  "section": "bestiary",
+  "order": 60,
+  "name": "Orang Minyak",
+  "alias": "the oily man",
+  "tags": {
+    "origin": "Malay / Nusantara",
+    "type": "Cursed man",
+    "region": "MY · SG",
+    "dread": 2
+  },
+  "body": [
+    "A figure slick with black oil from head to foot, naked and gleaming, who slips through windows at night to prey on young women. The oil is the point of him: grab hold and your hands slide off, so he can never be caught or held.",
+    "The tellings split on what he is. Some say a man who made a dark pact for power and must take a quota of victims to keep it; others, a living criminal who smears himself in oil precisely so no one can seize him, and lets the legend do his hiding for him. In 1960s Singapore and Malaysia the panics were real enough to empty streets after dark."
+  ],
+  "note": [
+    "One of the more \"human-shaped\" entries — interesting precisely because it sits on the seam between folklore and ordinary crime, the supernatural story a community tells to explain a frightening, very real prowler."
+  ]
+}

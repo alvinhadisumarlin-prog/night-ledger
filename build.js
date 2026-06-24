@@ -1,10 +1,11 @@
 #!/usr/bin/env node
 /*
  * The Night Ledger — static site build.
- * Renders index.html from entries.json + src/template.html.
- * Zero dependencies. Run:  node build.js
+ * Reads site.json + every stories/*.json and renders a self-contained dist/.
+ * Zero dependencies. Run:  node build.js   (output: dist/)
  *
- * To add an entry: add one object to "entries" in entries.json, then rebuild.
+ * To add a story: drop one stories/<CODE>.json file and push.
+ * The GitHub Action rebuilds and deploys — no manual regenerate.
  * The entry markup pattern is owned here so content stays a pure-data drop-in.
  */
 'use strict';
@@ -13,8 +14,21 @@ const fs = require('fs');
 const path = require('path');
 
 const ROOT = __dirname;
-const data = JSON.parse(fs.readFileSync(path.join(ROOT, 'entries.json'), 'utf8'));
+const DIST = path.join(ROOT, 'dist');
+const STORIES_DIR = path.join(ROOT, 'stories');
+
+const site = JSON.parse(fs.readFileSync(path.join(ROOT, 'site.json'), 'utf8'));
 let template = fs.readFileSync(path.join(ROOT, 'src', 'template.html'), 'utf8');
+
+// --- load the library of contained stories ---------------------------------
+const storyFiles = fs.readdirSync(STORIES_DIR).filter((f) => f.endsWith('.json'));
+const stories = storyFiles.map((f) => {
+  try {
+    return JSON.parse(fs.readFileSync(path.join(STORIES_DIR, f), 'utf8'));
+  } catch (e) {
+    throw new Error(`stories/${f} is not valid JSON: ${e.message}`);
+  }
+});
 
 // --- helpers ---------------------------------------------------------------
 const esc = (s) => String(s)
@@ -27,18 +41,23 @@ function dread(n) {
   return '◆'.repeat(filled) + '◇'.repeat(5 - filled);
 }
 
-function sectionById(id) {
-  return data.sections.find((s) => s.id === id);
-}
+const sectionById = (id) => site.sections.find((s) => s.id === id);
 
 // --- validation ------------------------------------------------------------
 const codes = new Set();
-for (const e of data.entries) {
-  if (!e.code) throw new Error(`Entry "${e.name || '?'}" is missing a code.`);
-  if (codes.has(e.code)) throw new Error(`Duplicate entry code: ${e.code}`);
+for (const e of stories) {
+  if (!e.code) throw new Error(`A story file is missing a "code".`);
+  if (!e.name) throw new Error(`Story ${e.code} is missing a "name".`);
+  if (codes.has(e.code)) throw new Error(`Duplicate story code: ${e.code}`);
   codes.add(e.code);
-  if (!sectionById(e.section)) throw new Error(`Entry ${e.code} references unknown section "${e.section}".`);
+  if (!sectionById(e.section)) throw new Error(`Story ${e.code} references unknown section "${e.section}". Add it to site.json first.`);
 }
+
+// stable order: explicit `order` first (ascending), then by code
+const inSection = (id) =>
+  stories
+    .filter((e) => e.section === id)
+    .sort((a, b) => (a.order ?? Infinity) - (b.order ?? Infinity) || a.code.localeCompare(b.code));
 
 // --- render one entry card -------------------------------------------------
 function renderEntry(e, idxInSection) {
@@ -72,8 +91,8 @@ ${note}  </article>`;
 
 // --- render entry sections -------------------------------------------------
 let sectionsHtml = '';
-for (const sec of data.sections) {
-  const entries = data.entries.filter((e) => e.section === sec.id);
+for (const sec of site.sections) {
+  const entries = inSection(sec.id);
   const cards = entries.map((e, i) => renderEntry(e, i)).join('\n\n');
   sectionsHtml +=
 `  <!-- ============ SECTION ${sec.num} ============ -->
@@ -91,7 +110,7 @@ ${cards}
 }
 
 // --- render the "To Be Collected" section ----------------------------------
-const stubs = (data.toCollect || [])
+const stubs = (site.toCollect || [])
   .map((s) => `    <li>${esc(s.name)} <span>${esc(s.code)}</span></li>`)
   .join('\n');
 sectionsHtml +=
@@ -112,8 +131,8 @@ ${stubs}
 
 // --- render the index / nav ------------------------------------------------
 let indexHtml = '';
-for (const sec of data.sections) {
-  const entries = data.entries.filter((e) => e.section === sec.id);
+for (const sec of site.sections) {
+  const entries = inSection(sec.id);
   const items = entries
     .map((e) => `      <li><span class="ix-code">${esc(e.code)}</span> <a href="#${esc(e.code)}">${esc(e.name)}</a></li>`)
     .join('\n');
@@ -127,11 +146,11 @@ ${items}
 indexHtml +=
 `    <p class="index-sec">★ To Be Collected</p>
     <ul>
-      <li><span class="ix-code">—</span> <a href="#sec-to-be-collected">Reserved codes (${(data.toCollect || []).length})</a></li>
+      <li><span class="ix-code">—</span> <a href="#sec-to-be-collected">Reserved codes (${(site.toCollect || []).length})</a></li>
     </ul>`;
 
 // --- fill the template -----------------------------------------------------
-const m = data.meta || {};
+const m = site.meta || {};
 const replacements = {
   '{{TITLE}}': esc(m.title || 'The Night Ledger'),
   '{{EYEBROW}}': esc(m.eyebrow || ''),
@@ -149,5 +168,18 @@ for (const [k, v] of Object.entries(replacements)) {
 const leftover = template.match(/{{[A-Z_]+}}/);
 if (leftover) throw new Error(`Unfilled template placeholder: ${leftover[0]}`);
 
-fs.writeFileSync(path.join(ROOT, 'index.html'), template);
-console.log(`Built index.html — ${data.entries.length} entries across ${data.sections.length} sections, ${(data.toCollect || []).length} reserved codes.`);
+// --- write dist/ (self-contained, ready to serve) --------------------------
+fs.rmSync(DIST, { recursive: true, force: true });
+fs.mkdirSync(DIST, { recursive: true });
+fs.writeFileSync(path.join(DIST, 'index.html'), template);
+
+// copy static assets verbatim
+fs.cpSync(path.join(ROOT, 'fonts'), path.join(DIST, 'fonts'), { recursive: true });
+for (const asset of ['favicon.svg', 'og-image.png']) {
+  fs.copyFileSync(path.join(ROOT, asset), path.join(DIST, asset));
+}
+// .nojekyll so GitHub Pages serves files/dirs as-is
+fs.writeFileSync(path.join(DIST, '.nojekyll'), '');
+
+const total = stories.length;
+console.log(`Built dist/ — ${total} stories across ${site.sections.length} sections, ${(site.toCollect || []).length} reserved codes.`);

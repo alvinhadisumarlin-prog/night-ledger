@@ -1,0 +1,20 @@
+{
+  "code": "SG-001",
+  "section": "haunted-singapore",
+  "order": 10,
+  "name": "Old Changi Hospital",
+  "alias": "the wards on the hill",
+  "tags": {
+    "origin": "Singapore site",
+    "type": "Haunted place",
+    "region": "Changi",
+    "dread": 4
+  },
+  "body": [
+    "Built by the British in the 1930s, the hilltop complex became, during the Japanese Occupation, a site associated with the Kempeitai and with the suffering of those held and interrogated there. Long after it closed as a hospital, it kept its reputation as one of the most haunted places on the island.",
+    "The accounts repeat the same notes: cold pockets in warm corridors, the cries of children in empty wards, a nurse seen drifting where no one walks, faces at the windows photographed from outside. Trespassers describe the building seeming to wake around them — the sense of being counted, and found."
+  ],
+  "note": [
+    "Distinguish layers here: documented wartime history, decades of trespasser lore, and the embellishment of ghost-tour retellings. The strongest entries note which layer each claim belongs to."
+  ]
+}

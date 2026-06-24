@@ -1,0 +1,20 @@
+{
+  "code": "CN-001",
+  "section": "bestiary",
+  "order": 50,
+  "name": "Jiangshi",
+  "alias": "殭屍 · the hopping corpse",
+  "tags": {
+    "origin": "Chinese",
+    "type": "Reanimated dead",
+    "region": "CN · SG diaspora",
+    "dread": 3
+  },
+  "body": [
+    "Stiff with rigor and dressed in the robes of a Qing official, the Jiangshi cannot bend its limbs, so it moves in rigid hops, arms outstretched, hunting the warm breath and life-essence of the living. It is a corpse that failed to rest — improperly buried, dead far from home, or stirred by foul energy.",
+    "It is blind and tracks you by your breathing alone. The old advice is the strangest and the simplest: stand still, and hold your breath until it passes. A Taoist priest seals it with a strip of yellow paper inscribed in cinnabar, pressed to its brow, and it freezes mid-hop."
+  ],
+  "note": [
+    "Folk wards include mirrors (which terrify it), sticky rice, the wood of a peach tree, and a threshold board high enough that stiff legs cannot clear it. The legend may grow from the real trade of \"transporting a corpse home\" over long roads in old China."
+  ]
+}

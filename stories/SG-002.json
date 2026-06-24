@@ -1,0 +1,20 @@
+{
+  "code": "SG-002",
+  "section": "haunted-singapore",
+  "order": 20,
+  "name": "Pulau Tekong",
+  "alias": "the island of recruits · \"Charlie Company\"",
+  "tags": {
+    "origin": "Singapore site",
+    "type": "Military legend",
+    "region": "Pulau Tekong",
+    "dread": 5
+  },
+  "body": [
+    "Every cohort of conscripts inherits the island's stories before they ever set foot on it. The most enduring: a company of recruits — Charlie Company, the tellings agree — that vanished on a night exercise and was quietly struck from the records, so that the bunk you sleep in may be one no roll call admits exists.",
+    "Then the smaller, surer tales: the extra pair of boots marching in the dark, the section that counts one too many heads, the figure standing at the foot of the bed at 3am, the soldier who hears his own name called from the treeline in a voice he knows is not human."
+  ],
+  "note": [
+    "A rare living tradition — passed mouth to mouth through national service, mutating each intake. Worth collecting first-hand: the same core motifs surface independently from men who never met, which is its own kind of unsettling."
+  ]
+}

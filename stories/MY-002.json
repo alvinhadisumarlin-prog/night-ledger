@@ -1,0 +1,20 @@
+{
+  "code": "MY-002",
+  "section": "bestiary",
+  "order": 20,
+  "name": "Penanggalan",
+  "alias": "the detaching head · cousin to the Thai Krasue",
+  "tags": {
+    "origin": "Malay / Nusantara",
+    "type": "Detaching revenant",
+    "region": "MY · TH · ID",
+    "dread": 5
+  },
+  "body": [
+    "By day she is an ordinary woman, often a midwife or a beauty who bargained for her looks. By night her head lifts free of her shoulders and rises into the dark, dragging her stomach and entrails beneath it like a lantern of wet rope, faintly glowing as it drifts over the rooftops.",
+    "She hunts the blood of women in labour and of newborns, settling on the roof above a birthing room to drink through unseen seams. Before dawn she soaks her trailing organs in vinegar so they shrink enough to fold back inside her sleeping body — which is the one moment she can be undone."
+  ],
+  "note": [
+    "Households would lay the thorny leaves of the mengkuang or jeruju at the windows; the trailing entrails snag, and she is held until light. Scatter glass or thorns on the roof and she cannot land. A near-identical creature flies the rice fields of Thailand as the Krasue."
+  ]
+}

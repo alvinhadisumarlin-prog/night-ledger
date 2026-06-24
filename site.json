@@ -1,0 +1,56 @@
+{
+  "meta": {
+    "title": "The Night Ledger",
+    "eyebrow": "A Private Compendium",
+    "sub": "Hauntings, creatures, and uneasy ground of Southeast & East Asia — collected, catalogued, kept.",
+    "epigraph": "Some stories are told to frighten children. These are kept to remind the rest of us that the dark was here long before we built our lights against it.",
+    "epigraphSource": "— Keeper's note, entry I",
+    "footer": "The Night Ledger · kept after dark"
+  },
+  "sections": [
+    {
+      "id": "bestiary",
+      "num": "I.",
+      "title": "The Bestiary"
+    },
+    {
+      "id": "haunted-singapore",
+      "num": "II.",
+      "title": "Haunted Ground — Singapore"
+    }
+  ],
+  "toCollect": [
+    {
+      "name": "Mae Nak Phra Khanong",
+      "code": "TH-001"
+    },
+    {
+      "name": "Krasue (Thai cousin of the Penanggalan)",
+      "code": "TH-002"
+    },
+    {
+      "name": "Aswang & Manananggal",
+      "code": "PH-001"
+    },
+    {
+      "name": "White Lady of Balete Drive",
+      "code": "PH-002"
+    },
+    {
+      "name": "Kuchisake-onna · the slit-mouthed woman",
+      "code": "JP-001"
+    },
+    {
+      "name": "Hungry Ghost Festival — offerings & rules",
+      "code": "CN-002"
+    },
+    {
+      "name": "Churel",
+      "code": "IN-001"
+    },
+    {
+      "name": "Hantu Tetek",
+      "code": "MY-006"
+    }
+  ]
+}
