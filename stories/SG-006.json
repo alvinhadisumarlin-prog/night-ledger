@@ -4,7 +4,12 @@
   "order": 60,
   "name": "Bukit Brown Cemetery",
   "alias": "Kopi Sua · the pioneers' hill of tombs and stone guardians",
-  "tags": { "origin": "Singapore site", "type": "Cemetery", "region": "Bukit Brown · Kheam Hock", "dread": 3 },
+  "tags": {
+    "origin": "Singapore site",
+    "type": "Cemetery",
+    "region": "Bukit Brown · Kheam Hock",
+    "dread": 3
+  },
   "body": [
     "Off Kheam Hock Road the city thins into a wilder green, and Bukit Brown opens as a landscape of low hills, lallang, and tombs that climb the slopes in their thousands. The sense that announces this place is breadth: not a single grave but a whole terrain of the dead, terraced and overgrown, where birdsong carries far and the traffic falls behind the ridge. Paired stone guardians stand at the larger graves, some carved as Sikh sentinels in turban and uniform, watching the paths with worn, patient faces, and the visitor quickly understands that this hill keeps its own time.",
     "Bukit Brown is one of the largest Chinese cemeteries outside China, the resting place of many of Singapore's pioneers and early families, its tombs elaborate with couplets, tilework, and protective figures drawn from southern Chinese tradition. In recent years a stretch of it was exhumed to make way for a road, and the disturbance gave the place a charged, liminal edge it did not have before. Volunteers documented the graves; families came to retrieve their ancestors; the hill became a site of memory and quiet contest. Visitors and the occasional night walker report figures glimpsed between the tombs at dusk, the feeling of being accompanied along the trails, and a stillness around the guardian statues that some find watchful rather than empty.",
@@ -13,5 +18,49 @@
   "note": [
     "Documented history: Bukit Brown is among the largest Chinese cemeteries outside China and holds the graves of many Singapore pioneers, noted for elaborate tombs and paired stone guardians, including figures styled as Sikh sentinels. A portion was exhumed for road construction, prompting extensive volunteer documentation and public attention. These facts are well recorded.",
     "The night sightings and watchful presences are local lore and ghost-tour atmosphere rather than documented events, and they should be read as the charge that any large, partly disturbed cemetery acquires. Treat the place with respect: it is an active site of ancestral memory for many families and an ongoing heritage effort, not merely a scary location. The genuine emotional weight here comes from real lives buried and real graves disturbed."
+  ],
+  "recountings": [
+    {
+      "text": "The blog My Mind Is Rojak (the Rojak Librarian) pays tribute to Ah Soon, a tombkeeper who cared for graves in Block 4 Section A of Bukit Brown. A quiet, chain-smoking man who wore a green towel like a bandana, he carried deep knowledge of who lay buried where, helping researchers link tombs across both Bukit Brown and neighbouring Kopi Sua. His death was mourned as the loss of irreplaceable memory about the cemetery's residents. This is documented heritage history of the cemetery's caretaker community, not ghost lore.",
+      "attribution": "My Mind Is Rojak (Rojak Librarian), ode to Tombkeeper Ah Soon",
+      "url": "https://mymindisrojak.blogspot.com/2024/05/an-ode-to-tombkeeper-ah-soon-bukit-brown.html"
+    },
+    {
+      "text": "The a.t.Bukit Brown (Brownies) site documents around 30 pairs of Sikh guard statues standing watch over the tombs of wealthy Chinese towkays, commissioned to guard their final resting places in place of traditional Chinese warrior deities. The choice reflected the real reputation of Singapore's Sikh community as trusted watchmen and bodyguards. These stone sentinels are documented heritage, though they feed the cemetery's reputation as a place of guardians and spirits.",
+      "attribution": "Bukit Brown (a.t.Bukit Brown / Brownies), the Sikh guards",
+      "url": "https://www.bukitbrown.org/2017/08/the-sikh-guards-of-bukit-brown.html"
+    },
+    {
+      "text": "A horror-folklore site describes Bukit Brown as one of Singapore's most haunted cemeteries, telling of Pontianaks, the vengeful spirits of women who died in pregnancy or childbirth, said to roam its forested grounds. It claims the 2011 highway works that relocated thousands of graves angered the dead, with the remaining tens of thousands of undisturbed graves said to defend their resting places. This is ghost lore layered onto the very real, documented exhumation controversy.",
+      "attribution": "Amy's Crypt, Singapore's Most Haunted Cemetery",
+      "url": "https://amyscrypt.com/singapore-haunted-cemetery-bukit-brown/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Bukit Brown Cemetery",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Bukit_Brown_Cemetery"
+    },
+    {
+      "title": "An ode to Tombkeeper Ah Soon (Bukit Brown)",
+      "publisher": "My Mind Is Rojak",
+      "url": "https://mymindisrojak.blogspot.com/2024/05/an-ode-to-tombkeeper-ah-soon-bukit-brown.html"
+    },
+    {
+      "title": "The Sikh guards of Bukit Brown",
+      "publisher": "a.t.Bukit Brown",
+      "url": "https://www.bukitbrown.org/2017/08/the-sikh-guards-of-bukit-brown.html"
+    },
+    {
+      "title": "The Caretakers of Bukit Brown and the Cracks of Singapore History",
+      "publisher": "Work Class Historian",
+      "url": "https://lkshistory.wordpress.com/2012/03/02/the-caretakers-of-bukit-brown-and-the-cracks-of-singapore-history/"
+    },
+    {
+      "title": "Singapore's Most Haunted Cemetery: Bukit Brown",
+      "publisher": "Amy's Crypt",
+      "url": "https://amyscrypt.com/singapore-haunted-cemetery-bukit-brown/"
+    }
   ]
 }

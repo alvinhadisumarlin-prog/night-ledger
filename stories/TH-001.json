@@ -4,7 +4,12 @@
   "order": 70,
   "name": "Mae Nak Phra Khanong",
   "alias": "Nang Nak · the wife who would not leave",
-  "tags": { "origin": "Thai", "type": "Devoted revenant", "region": "TH (Bangkok)", "dread": 4 },
+  "tags": {
+    "origin": "Thai",
+    "type": "Devoted revenant",
+    "region": "TH (Bangkok)",
+    "dread": 4
+  },
   "body": [
     "First it is the sight of an ordinary house lit warm against the canal dark, a woman at the doorway pounding rice, a child at her hip, the smell of cooking drifting over the water as though nothing in the world were wrong. Travellers along the Phra Khanong klong slow their boats to admire it. Only later, recounting the evening, do they remember that no man was ever seen there, that the lamps burned long after the village slept, and that the woman never once stepped beyond her own threshold into the light of the road.",
     "Nak died in childbirth while her husband Mak was away at war, and she would not accept it. Love held her in the shape of a living wife: she kept the house, cooked the meals, and waited, and when Mak came home wounded she greeted him as if he had never been gone. The tell is domestic and terrible. One evening, preparing nam phrik on the raised floor of the house, she drops a lime through a gap in the boards, and her arm follows it down, stretching long and boneless to the earth below to fetch it back. To see a wife reach where no living arm can reach is to understand at last whose roof you are sheltered under, and that the bargain she offers, a home that never ends, is one you cannot survive accepting.",
@@ -13,5 +18,49 @@
   "note": [
     "The classic ending has the monk Somdet Phra Phutthachan (To Phromrangsi) subduing Nak and confining her spirit, in the best-known version by inscribing her power into a piece of her own skull bone worn as a waistband relic. Wards in the wider tradition are the standard ones against a malevolent ghost (phi): the prayers and sacred thread of an ordained monk, sanctified water, and yantra cloth. The tale is firmly local to the Phra Khanong district of Bangkok and is retold endlessly in Thai film, song, and theatre.",
     "Whether Nak ever lived is unsettled; the story is usually dated to the reign of Rama IV or V in the nineteenth century. The shrine at Wat Mahabut remains an active site of devotion, where supplicants ask favours of a ghost remembered less for terror than for refusing to stop loving."
+  ],
+  "recountings": [
+    {
+      "text": "Visiting the shrine inside Wat Mahabut, journalist Laurel Tuohy found it less frightening than expected and more strange: rows of traditional Thai dresses hang on both sides, sold on-site so that worshippers whose wishes were granted can buy one and return it as thanks. She describes a tulle-wrapped tree shrine, golden statues, burning incense, and a TV running a 24-hour live feed of the shrine itself, since Mae Nak is said to enjoy watching. This is a specific writer's first-person visit account, not general lore.",
+      "attribution": "Laurel Tuohy, Coconuts Bangkok",
+      "url": "https://coconuts.co/bangkok/lifestyle/mae-nak-visiting-weird-wonderful-shrine-dedicated-thailands-famous-ghost/"
+    },
+    {
+      "text": "Time Out Bangkok describes the shrine as a small wooden structure beside the canal in the Wat Mahabut complex, drawing pregnant women hoping for an easy birth, young men wanting to dodge the military draft, and crowds chasing lucky lottery numbers. On the night before a lottery draw the temple stays open until dawn, with candles everywhere and fortune tellers lining the alley, and devotees rub the bark of the giant Ton Takien tree hoping numbers will appear. This is a widely circulated description of standard pilgrim devotion at the shrine, not a single named person's experience.",
+      "attribution": "Time Out Bangkok, Wat Mahabut",
+      "url": "https://www.timeout.com/bangkok/things-to-do/wat-mahabut-mae-nak-phra-khanong"
+    },
+    {
+      "text": "A commonly retold debunking version, recorded on Wikipedia from research by Thai historian Anek Nawikamul, traces the tale to an 1899 newspaper article and proposes that the real figure was a pregnant woman, Amdaeng Nak, who died in childbirth. In this account her grieving son allegedly invented the ghost to keep his father from remarrying, dressing as a woman and throwing rocks at passing boats to keep the legend alive. This is widely circulated historical lore rather than a personal sighting.",
+      "attribution": "Wikipedia, Mae Nak Phra Khanong (citing historian Anek Nawikamul)",
+      "url": "https://en.wikipedia.org/wiki/Mae_Nak_Phra_Khanong"
+    }
+  ],
+  "references": [
+    {
+      "title": "Mae Nak Phra Khanong",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Mae_Nak_Phra_Khanong"
+    },
+    {
+      "title": "Mae Nak: Visiting the weird, wonderful shrine dedicated to Thailand's famous ghost",
+      "publisher": "Coconuts Bangkok",
+      "url": "https://coconuts.co/bangkok/lifestyle/mae-nak-visiting-weird-wonderful-shrine-dedicated-thailands-famous-ghost/"
+    },
+    {
+      "title": "Wat Mahabut (Mae Nak Phra Khanong), Things to do in Suan Luang",
+      "publisher": "Time Out Bangkok",
+      "url": "https://www.timeout.com/bangkok/things-to-do/wat-mahabut-mae-nak-phra-khanong"
+    },
+    {
+      "title": "Mae Nak Phra Khanong: Thailand's Most Famous Ghost (Love) Story",
+      "publisher": "Thailand Foundation",
+      "url": "https://thailandfoundation.or.th/mae-nak-phra-khanong-thailands-most-famous-ghost-love-story/"
+    },
+    {
+      "title": "Bangkok's haunted temple: the ghost story of Mae Nak",
+      "publisher": "Where Sidewalks End",
+      "url": "https://www.wheresidewalksend.com/ghost-story-of-mae-nak/"
+    }
   ]
 }

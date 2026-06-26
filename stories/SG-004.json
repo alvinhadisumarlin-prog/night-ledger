@@ -4,7 +4,12 @@
   "order": 40,
   "name": "Istana Woodneuk",
   "alias": "Woodneuk House · the blue-roofed ruin lost in the forest off Tyersall",
-  "tags": { "origin": "Singapore site", "type": "Abandoned mansion", "region": "Tyersall · Holland", "dread": 3 },
+  "tags": {
+    "origin": "Singapore site",
+    "type": "Abandoned mansion",
+    "region": "Tyersall · Holland",
+    "dread": 3
+  },
   "body": [
     "You do not find Istana Woodneuk so much as the forest releases it. Off Tyersall Avenue, where the secondary growth thickens behind Holland Road and the city noise falls away into a green hum, the ground rises through ferns and strangler figs until a wall appears that should not be there. Then the roof: a long span of zinc gone the colour of a bruised sky, that famous blue, half collapsed and folded in on itself like a tent left to rot. The sense that announces this place is not sound but a sudden hush, the particular silence of a building that has outlived everyone who once spoke inside it.",
     "The house belongs to the orbit of the Johor royal family; the wider Tyersall estate was associated with Sultan Abu Bakar and his descendants, and a grand residence stood on this ground long before the present shell. The structure seen today was rebuilt in the early twentieth century, and over the decades it passed out of use, suffered a serious fire, and was left to the trees. Trespassers, urban explorers, and photographers have made it a pilgrimage for years, returning with the same images: the warped staircase, the empty window frames framing leaves, graffiti laid over plaster. They report cold rooms on warm days, the feeling of being watched from doorways, and footsteps that pace the upper floor when no one is above. How much is the building and how much is the mind bracing for a building like this is impossible to say.",
@@ -13,5 +18,54 @@
   "note": [
     "Documented history: a royal residence connected to the Johor sultanate stood on the Tyersall ground from the nineteenth century, and the surviving Woodneuk structure dates to a later rebuild; a fire is well attested, and the house has stood derelict in secondary forest for decades. These are matters of record and the architecture itself.",
     "The hauntings are trespasser lore and explorer embellishment, not documented fact. The cold rooms, watching presences, and upper-floor footsteps come from people who climbed in, not from any verified account; treat them as atmosphere. Please also note the practical reality: the site is private property, access is restricted, and entering is unsafe and unlawful. Respect that the place is tied to a real dynasty and a real history rather than treating it purely as a thrill."
+  ],
+  "recountings": [
+    {
+      "text": "An urban-explorer trip report describes reaching the ruin by crossing from the Botanic Gardens into Tyersall Road and following an overgrown palm trail to a metal gate. Inside, the writer found grand twin staircases with rotted planks, small rooms scattered with a lone chair, a wheelbarrow and crude graffiti, servant quarters, and the infamous grimy bathtub. Notably the explorer felt the place was more serene and sad than frightening, with the collapsed blue roof tiles lying scattered on the ground; this is a documented visit, while the spooky reputation is reputation alone.",
+      "attribution": "Chasing Peaks blog, exploring Istana Woodneuk",
+      "url": "https://www.chasingpeaks.blog/post/istana-woodneuk-exploring-an-abandoned-istana-lost-in-the-forest"
+    },
+    {
+      "text": "Travel blogger Miss Mina recounts hiking in with a group of seven down a faint dirt path near Dempsey, passing tangled roots and a wig left to spook trespassers before reaching the decaying palace with its 2006-burned roof and heavy graffiti. She links the eerie mood to the estate's wartime history, when the grounds reportedly saw many deaths during Japanese bombing. One companion claimed to see apparitions, including a bearded British man by the staircase and finely dressed figures; these sightings are anecdotal lore, not record.",
+      "attribution": "Miss Mina, exploring Singapore's abandoned mansion",
+      "url": "https://www.missmina.co/blog/2015/7/21/exploring-singapores-haunted-mansion"
+    },
+    {
+      "text": "A listicle account frames Woodneuk's haunted name around its repeated destruction by fire, in 1925, during the 1942 wartime bombing, and most ruinously in 2006, the blaze that finally caved in the iconic blue roof. It half-jokingly asks whether the land is cursed while admitting no specific ghost encounters are documented. It also notes the verified detail that author Kevin Kwan cited the abandoned mansion as inspiration for the Young family home in Crazy Rich Asians.",
+      "attribution": "TheSmartLocal, Istana Woodneuk",
+      "url": "https://thesmartlocal.com/read/istana-woodneuk-singapore/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Istana Woodneuk",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Istana_Woodneuk"
+    },
+    {
+      "title": "Istana Woodneuk",
+      "publisher": "Remember Singapore",
+      "url": "https://remembersingapore.org/istana-woodneuk/"
+    },
+    {
+      "title": "The History Behind Istana Woodneuk",
+      "publisher": "ExplorerSG",
+      "url": "https://explorersg.com/the-history-behind-istana-woodneuk/"
+    },
+    {
+      "title": "Istana Woodneuk: Exploring an abandoned Istana lost in the forest",
+      "publisher": "Chasing Peaks",
+      "url": "https://www.chasingpeaks.blog/post/istana-woodneuk-exploring-an-abandoned-istana-lost-in-the-forest"
+    },
+    {
+      "title": "Exploring Singapore's Abandoned Mansion",
+      "publisher": "Miss Mina",
+      "url": "https://www.missmina.co/blog/2015/7/21/exploring-singapores-haunted-mansion"
+    },
+    {
+      "title": "Istana Woodneuk: Spooky Abandoned Royal Palace That Inspired Crazy Rich Asians",
+      "publisher": "TheSmartLocal",
+      "url": "https://thesmartlocal.com/read/istana-woodneuk-singapore/"
+    }
   ]
 }

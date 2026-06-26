@@ -4,7 +4,12 @@
   "order": 50,
   "name": "Old Ford Factory",
   "alias": "Former Ford Motor Factory · the room where Singapore was surrendered",
-  "tags": { "origin": "Singapore site", "type": "Wartime site", "region": "Bukit Timah", "dread": 3 },
+  "tags": {
+    "origin": "Singapore site",
+    "type": "Wartime site",
+    "region": "Bukit Timah",
+    "dread": 3
+  },
   "body": [
     "On Upper Bukit Timah Road the long art deco facade sits low and pale against the hill, its name still spelled out in raised letters above the entrance. Inside, the air is cool and deliberate, the cool of a museum that knows exactly what it holds. The sense that announces this place is gravity rather than fear: a quiet that settles as you cross the threshold, the weight of a single afternoon that bent the course of a whole island pressing through the polished floors and the careful displays.",
     "This was the first Ford assembly plant in Southeast Asia, and on the fifteenth of February 1942 it became the room in which Lieutenant General Arthur Percival formally surrendered Singapore to General Yamashita Tomoyuki of the Imperial Japanese Army. The fall of Singapore followed, and with it the Japanese Occupation, three and a half years of fear, scarcity, and the killings that mark the city's memory. The factory served as a production and command site during the war. Today it is a national heritage gallery telling that history, and yet visitors and staff have long traded quieter reports: footsteps in empty galleries, the sense of someone standing just behind, a heaviness in the surrender room that some say is simply the room and others say is something that has not left it.",
@@ -13,5 +18,49 @@
   "note": [
     "Documented history is firm and important: the former Ford Motor Factory was the site of the British surrender to Japanese forces on 15 February 1942, and it now operates as a World War II heritage gallery and gazetted national monument. Names, dates, and the role of the building are matters of record and should be stated plainly and respectfully.",
     "The hauntings belong to visitor anecdote and ghost-tour atmosphere, not to the museum's documented account; the footsteps and the heaviness in the surrender room are reported impressions, not verified events. Because this is a place of real suffering during the Occupation, keep the tone sober. The unsettling power of the site comes from genuine history, and that should never be obscured or embellished for effect."
+  ],
+  "recountings": [
+    {
+      "text": "Campus Magazine recounts that after the Ford Motor Factory became the Japanese military headquarters in 1942, a number of Japanese soldiers were said to have committed ritual suicide on the grounds following the surrender. The piece notes paranormal investigators reporting distortions in their wireless signals, Japanese food offerings that subtly changed compared with a control set left untouched, and flickering lights seen inside the compound at 11pm local time, which corresponds to midnight in Tokyo. This is presented as ghost lore, distinct from the documented 1942 capitulation that historically took place at the building.",
+      "attribution": "Campus Magazine (campus.sg), Singapore Hauntings from WWII",
+      "url": "https://www.campus.sg/hauntings-from-wwii/"
+    },
+    {
+      "text": "A Singapore haunted-rumours blog repeats the popular tale tied to the factory's wartime use as a Japanese command post, claiming that at 11pm, midnight Tokyo time, spirits rise inside the building to light old lanterns. The account links the supposed haunting directly to the site's role during the Japanese Occupation. It is folklore rather than verified record.",
+      "attribution": "Top 5 SG Haunted Rumours (blog)",
+      "url": "https://top5sghauntedrumours.wordpress.com/"
+    },
+    {
+      "text": "A short video frames the question many locals ask, namely whether the Old Ford Factory along Upper Bukit Timah Road is haunted by World War II spirits. The clip plays on the building's heavy wartime history, the surrender and the Japanese occupation, as the backdrop for its rumoured hauntings. The supernatural claims it raises are lore, not documented fact.",
+      "attribution": "YouTube short on the Old Ford Factory hauntings",
+      "url": "https://www.youtube.com/watch?v=WDnsBXUEHak"
+    }
+  ],
+  "references": [
+    {
+      "title": "Former Ford Factory",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Former_Ford_Factory"
+    },
+    {
+      "title": "The Old Ford Factory at Upper Bukit Timah Road",
+      "publisher": "Roots (National Heritage Board)",
+      "url": "https://www.roots.gov.sg/Collection-Landing/listing/1084330"
+    },
+    {
+      "title": "Terror Thursday: Singapore Hauntings from WWII",
+      "publisher": "Campus Magazine",
+      "url": "https://www.campus.sg/hauntings-from-wwii/"
+    },
+    {
+      "title": "Old Ford Factory",
+      "publisher": "Dark Tourism",
+      "url": "https://www.dark-tourism.com/index.php/singapore/15-countries/individual-chapters/1116-oldfordfactory"
+    },
+    {
+      "title": "Top 5 Haunted/Ghost Sighting Stories in Singapore",
+      "publisher": "Top 5 SG Haunted Rumours",
+      "url": "https://top5sghauntedrumours.wordpress.com/"
+    }
   ]
 }

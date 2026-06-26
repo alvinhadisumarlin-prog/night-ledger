@@ -44,6 +44,16 @@ OUTPUT RULES
   ],
   "note": [
     "Keeper's note — the WARD against it, variants, where it's told; if first-hand, who told you and when."
+  ],
+  "recountings": [
+    {
+      "text": "A PARAPHRASED 2 to 4 sentence account or retelling gathered from the internet (a forum post, a news report, a blog, a viral thread, a paranormal-group write-up). Paraphrase in your own words; never paste copyrighted text. Say whether it is a specific person's post or widely circulated lore.",
+      "attribution": "who or where it came from",
+      "url": "https://..."
+    }
+  ],
+  "references": [
+    { "title": "Page or article title", "publisher": "Wikipedia / a news outlet / a blog", "url": "https://..." }
   ]
 }
 
@@ -52,6 +62,12 @@ LENGTH & VOICE
   thin). Present tense, measured, unsettling, literary.
 - note = 1 to 2 paragraphs. Optional — omit the whole "note" field if there's
   nothing to add.
+- recountings = 2 to 3 real accounts gathered from the web, each PARAPHRASED (no
+  verbatim copyrighted text) and attributed with a working url. Render under
+  "Recounted online". For invented "apocrypha" entries, OMIT recountings and
+  references entirely (do not fabricate sources): the site marks them as fiction.
+- references = 4 to 6 sources, each { title, publisher, url }, listed at the
+  foot of the entry under "Sources". Verify the urls load.
 - dread: 1 mischievous · 2 disturbing · 3 dangerous · 4 deadly · 5 nightmare.
 - Original prose / public-domain folklore only — no copyrighted text. Keep names,
   origins, and wards accurate; flag uncertainty in the Keeper's note.

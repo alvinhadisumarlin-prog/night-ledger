@@ -4,7 +4,12 @@
   "order": 110,
   "name": "Churel",
   "alias": "Chudail · the backward-footed ghost of a woman dead in childbirth, who lures kinsmen and drains their youth",
-  "tags": { "origin": "South Asian", "type": "Vengeful revenant", "region": "IN · PK · BD · NP", "dread": 4 },
+  "tags": {
+    "origin": "South Asian",
+    "type": "Vengeful revenant",
+    "region": "IN · PK · BD · NP",
+    "dread": 4
+  },
   "body": [
     "You see the beauty before you see anything wrong, a young woman waiting at the village edge or the cremation ground at dusk, lovely in a way that makes a man forget the hour. She smiles, and the smile is warm, and only if you look down do you find the warning: her feet are turned backward, heels where the toes should be, so that her footprints walk away from where she stands. By then she has already taken your arm.",
     "She is born of grief and grievance, the spirit of a woman who died in childbirth or in pregnancy, or who was neglected, mistreated, or denied her proper rites by her own family. Such a death is held to be impure, and the impurity festers into hunger. The churel returns disguised as someone desirable, often to entrap the very men of the household that failed her, brothers, husbands, sons, leading them into the dark and feeding on their vitality. A man she takes is found wasted and white-haired, aged forty years in a night, emptied of the youth she was owed and never given. The bargain at her heart is brutal and fair in its own grammar: she takes back from the living what the living took from her.",
@@ -13,5 +18,49 @@
   "note": [
     "The protections are rites of respect for the dead. Across the region, women who died in childbirth or other \"unclean\" deaths were given careful, sometimes unusual burials so the soul would rest: bodies might be buried face down, the feet bound or nailed, iron placed in the grave, or mustard seeds scattered along the path home so the returning spirit would be compelled to count them and never reach the door. Naming her and performing the proper funeral rites she was denied is the deeper cure.",
     "The churel (also chudail, churail, or churreyl) is told across India, Pakistan, Bangladesh, and Nepal, with cousins in wider South and Southeast Asian lore such as the pontianak. The backward feet are her constant signature. The tale carries an older social weight: it grew up around the real fear and stigma surrounding maternal death and the mistreatment of low-status or widowed women, so that the ghost is, in part, a reckoning aimed back at the household that wronged her."
+  ],
+  "recountings": [
+    {
+      "text": "A common retelling has a man riding alone through the mountains at night who stops for a woman stranded at the roadside. She climbs on and sits silently behind him, then vanishes the moment they pass another traveler. When he turns to look, all he glimpses are her backward-pointing feet slipping into the dark. This is widely-circulated lore rather than one person's account, presented here as the classic Pichal Peri (a regional form of the churel) story pattern.",
+      "attribution": "Mythlok, folklore reference site",
+      "url": "http://mythlok.com/urban-legends/pichal-peri/"
+    },
+    {
+      "text": "A writer recalls that his uncle used to share unverifiable stories of meeting the Pichal Peri while driving late at night on lonely Pakistani highways. In the uncle's telling, a beautiful woman would flag him down for help and then vanish the instant he was distracted; her one giveaway was that her feet were always turned backward. Locals explained her as the vengeful ghost of a woman who died in childbirth or was abused by in-laws. This is a specific person's family recollection, not anonymous lore.",
+      "attribution": "INKspire, Urban Legends From My Childhood in Pakistan",
+      "url": "https://inkspire.org/post/urban-legends-from-my-childhood-in-pakistan/"
+    },
+    {
+      "text": "In the Indian-Caribbean diaspora the spirit survives as the churile, retold by Trinidadian folklorist Marsha Gomes-McKie as the ghost of a woman who died pregnant or in childbirth. She wanders lonely roads and silk cotton trees as a wailing figure in white with unkempt hair and, in some versions, backward feet or a head turned upside down, carrying an infant whose cry sounds like a cat. Unlike the South Asian original she preys mainly on pregnant women and babies, and crossing a river is said to escape her. This is a regional retelling of the lore, not a firsthand encounter.",
+      "attribution": "Marsha Gomes-McKie, Caribbean Folklore Part 7: Churile",
+      "url": "https://marshagomes.wordpress.com/2021/12/01/caribbean-folklore-part-7-churile/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Churel",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Churel"
+    },
+    {
+      "title": "Pichal Peri",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Pichal_Peri"
+    },
+    {
+      "title": "Pichal Peri: The Reverse Footed Ghost",
+      "publisher": "Mythlok",
+      "url": "http://mythlok.com/urban-legends/pichal-peri/"
+    },
+    {
+      "title": "Urban Legends From My Childhood in Pakistan",
+      "publisher": "INKspire",
+      "url": "https://inkspire.org/post/urban-legends-from-my-childhood-in-pakistan/"
+    },
+    {
+      "title": "Caribbean Folklore Part 7: Churile",
+      "publisher": "Marsha Gomes-McKie",
+      "url": "https://marshagomes.wordpress.com/2021/12/01/caribbean-folklore-part-7-churile/"
+    }
   ]
 }

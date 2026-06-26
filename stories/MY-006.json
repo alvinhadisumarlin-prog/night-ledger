@@ -4,7 +4,12 @@
   "order": 120,
   "name": "Hantu Tetek",
   "alias": "The Breast Ghost · a giant female spirit that smothers stragglers beneath enormous breasts to herd children indoors before dark",
-  "tags": { "origin": "Malay / Nusantara", "type": "Smothering spirit", "region": "MY · SG", "dread": 2 },
+  "tags": {
+    "origin": "Malay / Nusantara",
+    "type": "Smothering spirit",
+    "region": "MY · SG",
+    "dread": 2
+  },
   "body": [
     "You feel her before the light fails, a heaviness in the warm air of dusk, the sense of something vast and soft moving where there should only be the last play of evening. She is enormous, a towering female shape whose chest hangs immense and low, and she favours the in-between places: the back of a house, the edge of a field, the path a child takes when the grown-ups have already called twice and been ignored.",
     "She hunts the ones who stray, those who linger outdoors after the maghrib hour or wander somewhere they were told not to go. She does not chase so much as gather, looming over the straggler and folding them into the suffocating dark beneath her great breasts, pressing the breath and the wandering out of them until they are lost. This is the bargain her tale enforces: the dusk belongs to the spirits, and a child who refuses to come in when called has stepped out of the safe and ordinary world into hers. She is recognised less by sight than by the threat of her, the name spoken to make a lingering child suddenly remember the door.",
@@ -13,5 +18,49 @@
   "note": [
     "There is no charm to bargain with, because she is chiefly a guardian-bogey: the true ward is simply obedience, coming indoors before nightfall and the maghrib prayer, and not wandering off alone at dusk. Adults invoke her exactly to produce that behaviour, so the most reliable protection against Hantu Tetek is to already be safely inside when she is said to walk.",
     "Hantu Tetek belongs to the rich hantu (spirit) tradition of Malay and wider Nusantara folklore, told across Malaysia and Singapore and recognisable in neighbouring Indonesian lore. She sits among the gentler, comedic-grotesque spirits used to manage children, alongside cautionary figures of the dusk, and is generally remembered as uncanny and smothering rather than truly lethal, more a creature of nursery threat than of the graveyard."
+  ],
+  "recountings": [
+    {
+      "text": "A social media user shared a warning her friend's mother always gave: if you feel something biting or pressing on your body in the dead of night, do not answer or acknowledge it, because it is the kopek spirit bothering you. The lore she passed on said Hantu Kopek favors children who stay up and sleep too late, and that some people wake to find unexplained red marks on their skin with no memory of the night. The poster ended by asking whether others grew up hearing the same thing, framing it as shared childhood folklore. This is a specific person's post.",
+      "attribution": "Threads post relaying a family warning about Hantu Kopek",
+      "url": "https://www.threads.com/@ms.joanwong/post/DMXc986SuNv/hantu-kopek-or-hantu-tetek-kawan-aku-pernah-cerita-mak-dia-selalu-pesan-kalau"
+    },
+    {
+      "text": "A common retelling follows a man walking home late who meets an attractive woman by the roadside and starts to follow her. He notices that her shadow does not match her body, and then she swells into a monstrous figure with enormous breasts and chases him, growing larger as she comes. He only escapes by reciting religious verses or calling out the azan. A parallel village tale tells of a child who ignores warnings, plays outside after dark, goes missing, and later turns up dazed but unharmed, claiming to have been kept by the spirit beneath her breasts. These are widely circulated cautionary retellings rather than one witness's account.",
+      "attribution": "MalaysiaFact, folklore retellings of Hantu Tetek",
+      "url": "https://malaysiafact.com/hantu-tetek-the-bizarre-yet-terrifying-spirit/"
+    },
+    {
+      "text": "In February 2021 a Twitter user posted sketches of the Hantu Tetek that went viral across Malaysian social media, with many users joking about her and others asking how to summon her. The article explains the underlying legend of an old woman who suffocates wandering children with her breasts and who sometimes disguises herself as a young beauty to lure men, and notes her appearance in the horror comedy Hantu Kak Limah, where a shaman accidentally summons her with long, snake like breasts. This is a documented viral social media moment plus the surrounding lore.",
+      "attribution": "Coconuts KL, the 2021 viral Hantu Tetek moment",
+      "url": "https://coconuts.co/kl/lifestyle/malaysians-enraptured-by-big-titty-ghost-aka-hantu-tetek/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Ghosts in Malay culture (Hantu Tetek)",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ghosts_in_Malay_culture"
+    },
+    {
+      "title": "Hantu Tetek: The Large Breasted Ghost",
+      "publisher": "Mythlok",
+      "url": "https://mythlok.com/hantu-tetek/"
+    },
+    {
+      "title": "Hantu Tetek: The Bizarre Yet Terrifying Spirit of Malaysian Folklore",
+      "publisher": "MalaysiaFact",
+      "url": "https://malaysiafact.com/hantu-tetek-the-bizarre-yet-terrifying-spirit/"
+    },
+    {
+      "title": "Malaysians enraptured by hantu tetek",
+      "publisher": "Coconuts KL",
+      "url": "https://coconuts.co/kl/lifestyle/malaysians-enraptured-by-big-titty-ghost-aka-hantu-tetek/"
+    },
+    {
+      "title": "Hantu Tetek (forum discussion)",
+      "publisher": "Lowyat.NET Forum",
+      "url": "https://forum.lowyat.net/topic/2094818/all"
+    }
   ]
 }

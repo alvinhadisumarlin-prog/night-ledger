@@ -1,0 +1,101 @@
+  /* ===================================================================
+     CODEX + PER-ENTRY PAGES  (added when the site split into a codex
+     index plus one page per entry). Reuses the variables/fonts above.
+     =================================================================== */
+
+  /* ---------- codex: the main-page list of entries ---------- */
+  .codex-sec{margin:clamp(40px,8vw,60px) 0 0;}
+  .codex-sec:first-of-type{margin-top:clamp(20px,4vw,32px);}
+  .codex-head{display:flex;align-items:baseline;gap:14px;margin:0 0 6px;scroll-margin-top:24px;}
+  .codex-head .num{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--oxblood-bright);letter-spacing:.1em;}
+  .codex-head h2{font-family:'Cinzel',serif;font-weight:500;font-size:clamp(19px,4.6vw,26px);letter-spacing:.06em;margin:0;color:var(--bone);}
+  .codex-intro{color:var(--smoke);font-size:14px;font-style:italic;margin:6px 0 14px;line-height:1.6;}
+  .codex-count{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--joss-dim);margin-left:auto;}
+  .codex-list{list-style:none;padding:0;margin:0;border-top:1px solid var(--ash-edge);}
+  .codex-list li{border-bottom:1px solid var(--ash-edge);}
+  .codex-row{
+    display:flex;align-items:baseline;gap:14px;
+    padding:13px 8px;text-decoration:none;color:var(--bone);
+    transition:background .25s ease,padding-left .25s ease;
+  }
+  .codex-row:hover,.codex-row:focus-visible{background:rgba(217,164,65,.05);padding-left:15px;outline:none;}
+  .codex-row .c-code{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.12em;color:var(--smoke);flex:0 0 58px;}
+  .codex-row .c-name{font-family:'Cinzel',serif;font-size:16.5px;letter-spacing:.02em;color:var(--bone);transition:color .25s ease;}
+  .codex-row:hover .c-name,.codex-row:focus-visible .c-name{color:var(--joss);}
+  .codex-row .c-alias{font-style:italic;color:var(--smoke);font-size:13px;flex:1 1 auto;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+  .codex-row .c-dread{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--oxblood-bright);letter-spacing:.04em;flex:0 0 auto;}
+  @media (max-width:580px){.codex-row .c-alias{display:none;}}
+
+  /* ---------- entry page scaffolding ---------- */
+  .backlink{
+    display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:11px;
+    letter-spacing:.16em;text-transform:uppercase;color:var(--joss-dim);
+    text-decoration:none;margin:0 0 22px;border-bottom:1px solid transparent;
+    transition:color .25s ease,border-color .25s ease;
+  }
+  .backlink:hover,.backlink:focus-visible{color:var(--joss);border-bottom-color:var(--joss-dim);}
+  .entry-page .entry{animation:none;opacity:1;transform:none;margin-bottom:0;}
+  .entry-page .entry:hover{transform:none;border-color:var(--ash-edge);}
+  .entry-crumb{
+    font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--joss-dim);margin:0 0 16px;
+  }
+
+  /* shared label rule for the recountings / sources blocks */
+  .block-label{
+    font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.24em;
+    text-transform:uppercase;color:var(--joss);margin:0 0 16px;font-weight:500;
+    display:flex;align-items:center;gap:12px;
+  }
+  .block-label::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,var(--joss-dim),transparent);opacity:.45;}
+
+  /* ---------- recountings (accounts gathered online) ---------- */
+  .recountings{margin:30px 0 0;}
+  .recounting{border-left:2px solid var(--ash-edge);padding:3px 0 3px 18px;margin:0 0 20px;}
+  .recounting:last-child{margin-bottom:0;}
+  .recounting p{margin:0 0 8px;font-size:15.5px;line-height:1.65;color:#d3ccc0;font-style:italic;}
+  .recounting .attr{
+    font-family:'IBM Plex Mono',monospace;font-style:normal;font-size:10.5px;
+    letter-spacing:.07em;text-transform:uppercase;color:var(--smoke);display:block;
+  }
+  .recounting .attr a{color:var(--joss-dim);text-decoration:none;border-bottom:1px solid transparent;transition:color .2s,border-color .2s;}
+  .recounting .attr a:hover{color:var(--joss);border-bottom-color:var(--joss-dim);}
+
+  /* ---------- references / sources ---------- */
+  .references{margin:32px 0 0;}
+  .ref-list{list-style:none;padding:0;margin:0;counter-reset:ref;}
+  .ref-list li{
+    position:relative;padding:8px 0 8px 30px;font-size:14px;line-height:1.55;
+    color:#c4bcb1;border-bottom:1px dashed var(--ash-edge);
+  }
+  .ref-list li:last-child{border-bottom:0;}
+  .ref-list li::before{
+    counter-increment:ref;content:counter(ref);position:absolute;left:2px;top:9px;
+    font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--joss-dim);
+  }
+  .ref-list a{color:#d3ccc0;text-decoration:none;border-bottom:1px solid var(--ash-edge);transition:color .2s,border-color .2s;}
+  .ref-list a:hover{color:var(--joss);border-bottom-color:var(--joss-dim);}
+  .ref-list .pub{color:var(--smoke);font-style:italic;}
+
+  /* ---------- apocrypha provenance mark (invented entries) ---------- */
+  .apocrypha-mark{
+    margin:24px 0 0;padding:14px 16px 14px 18px;
+    border-left:2px solid var(--joss-dim);background:rgba(217,164,65,.05);
+    font-size:14.5px;color:#c4bcb1;
+  }
+  .apocrypha-mark .lbl{
+    display:block;font-family:'IBM Plex Mono',monospace;font-size:10px;
+    letter-spacing:.22em;text-transform:uppercase;color:var(--joss);margin-bottom:6px;
+  }
+  .apocrypha-mark p{margin:0;font-size:14.5px;}
+
+  /* ---------- prev / next within a section ---------- */
+  .entry-nav{
+    display:flex;justify-content:space-between;gap:18px;margin:40px 0 0;padding-top:22px;
+    border-top:1px solid var(--ash-edge);
+    font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.08em;
+  }
+  .entry-nav a{color:var(--joss-dim);text-decoration:none;max-width:46%;transition:color .2s ease;}
+  .entry-nav a:hover,.entry-nav a:focus-visible{color:var(--joss);}
+  .entry-nav .nx{text-align:right;margin-left:auto;}
+  .entry-nav .nav-dir{display:block;color:var(--smoke);font-size:9.5px;letter-spacing:.2em;margin-bottom:3px;}

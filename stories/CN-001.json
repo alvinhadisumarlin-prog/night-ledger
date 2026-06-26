@@ -18,5 +18,44 @@
   "note": [
     "Folk wards against it are many and oddly domestic: mirrors, which are said to terrify it with its own reflection; sticky rice spread on the ground or packed into wounds; the wood of a peach tree, long held to repel evil; and a high threshold board across the doorway, raised so that stiff legs cannot clear it. The cinnabar talisman of the Taoist priest is the surest stop of all.",
     "The legend most likely grows from a real and grim practice of old China, the long-distance transport of corpses home for burial, in which bodies were said to be moved upright over the roads at night so that those who died far from their ancestral villages could be returned to rest. Carried into Singapore and the wider Chinese diaspora, the Jiangshi found a second life in twentieth-century film and remains one of the most recognisable figures of Chinese supernatural folklore."
+  ],
+  "recountings": [
+    {
+      "text": "A commonly repeated origin story traces the jiangshi to a real Qing dynasty trade called corpse driving in the mountains of Xiangxi, Hunan. Migrant laborers who died far from home were carried back for ancestral burial by two Taoist practitioners, a master and his student, who moved the bound bodies only at night and rang bells or gongs to warn villagers to stay indoors. Because rigor mortis kept the corpses stiff, witnesses claimed the dead could only hop forward, which later fed directly into the hopping vampire image of Hong Kong cinema. This is widely-circulated cultural lore rather than one person's account.",
+      "attribution": "The World of Chinese, 'The Real Walking Dead'",
+      "url": "https://www.theworldofchinese.com/2014/05/the-real-walking-dead/"
+    },
+    {
+      "text": "A frequently cited rationalist retelling explains the hopping motion as an optical illusion. Families too poor to pay for carts hired corpse drivers who lashed rows of the dead upright against long bamboo poles, then carried them like shirts on a rack; as the carriers walked, the bamboo flexed and bounced, so from a distance the corpses appeared to leap in unison. A priest leading the procession rang a bell because seeing a jiangshi was thought to bring bad luck. This is widely-circulated explanatory lore, not a personal sighting.",
+      "attribution": "All About History (historyanswers.co.uk)",
+      "url": "https://www.historyanswers.co.uk/people-politics/chinese-hopping-vampires-the-gruesome-origin-of-the-jiangshi-legend/"
+    },
+    {
+      "text": "Classical Chinese sources frame the jiangshi through soul belief: a person holds three hun (ethereal souls) and seven po (corporeal souls), and when the good hun departs at death but the evil po lingers and seizes the body, a corpse reanimates. The Qing scholar Ji Xiaolan catalogued causes of such reanimation, including absorbed yang energy, a lightning strike, or a pregnant cat leaping over an unburied coffin. This is widely-circulated traditional lore drawn from classical texts, not an individual's report.",
+      "attribution": "Wikipedia, 'Jiangshi' (citing Ji Xiaolan and Yuan Mei)",
+      "url": "https://en.wikipedia.org/wiki/Jiangshi"
+    }
+  ],
+  "references": [
+    {
+      "title": "Jiangshi",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Jiangshi"
+    },
+    {
+      "title": "The Real Walking Dead (corpse-walking in Xiangxi)",
+      "publisher": "The World of Chinese",
+      "url": "https://www.theworldofchinese.com/2014/05/the-real-walking-dead/"
+    },
+    {
+      "title": "Chinese Hopping Vampires: The Qing Dynasty roots behind the Jiangshi legend",
+      "publisher": "All About History",
+      "url": "https://www.historyanswers.co.uk/people-politics/chinese-hopping-vampires-the-gruesome-origin-of-the-jiangshi-legend/"
+    },
+    {
+      "title": "Walking dead: old China practice of corpse herding",
+      "publisher": "South China Morning Post",
+      "url": "https://www.scmp.com/news/people-culture/trending-china/article/3264922/walking-dead-old-china-practice-corpse-herding-transporting-bodies-hometown-burial-using-long-bamboo"
+    }
   ]
 }

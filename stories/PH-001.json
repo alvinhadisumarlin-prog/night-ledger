@@ -4,7 +4,12 @@
   "order": 90,
   "name": "Aswang",
   "alias": "Tiktik · Wakwak · the neighbour who feeds on the dead and the unborn",
-  "tags": { "origin": "Filipino", "type": "Shapeshifting ghoul", "region": "PH (Visayas)", "dread": 5 },
+  "tags": {
+    "origin": "Filipino",
+    "type": "Shapeshifting ghoul",
+    "region": "PH (Visayas)",
+    "dread": 5
+  },
   "body": [
     "First it is a sound, and the sound lies to you. A bird call, tik-tik-tik, grows fainter as the thing draws nearer and louder as it moves away, so that the closer it comes the more certain you feel it has passed. Or it is a sweetness on the air where there should be none, the smell that gathers around a sickbed or a fresh grave. By daylight the aswang is no monster at all but a townswoman you have greeted a hundred times, quiet, unmarried perhaps, keeping to herself at the edge of the barrio.",
     "After dark she changes. She may take the form of a great black dog or a boar or a low-flying bird, and from the loft she lowers a tongue thin as thread, long enough to slip between bamboo slats and through the seams of a roof, to reach the dying, the freshly dead, and above all the unborn child in a sleeping mother's belly. The bargain at her heart is appetite without limit, hidden inside an ordinary life; she eats, then mends the grave or leaves a likeness woven from banana trunk in the bed so the family buries a husk and never knows. The surest way to know her is to look into her eyes, for in the eyes of an aswang your own reflection stands upside down.",
@@ -13,5 +18,54 @@
   "note": [
     "Wards are old and specific: salt and crushed garlic at windows and doors and rubbed on a pregnant woman's belly; the dried, barbed tail of a stingray (the buntot pagi) kept as a whip, said to drive the creature off; raw or holy items it cannot abide; and the test of the reflection, since you appear inverted in its eyes. Aswang is an umbrella term covering several overlapping types in Philippine folklore, including the viscera-sucking manananggal (a self-segmenting flyer), the corpse-eating ghoul proper, the witch (mangkukulam), the weredog or weretiger (aswang shapeshifter), and the tiktik or wakwak named for the bird-cry that signals their approach.",
     "The tradition is pan-Philippine but most densely associated with the Visayas, and the province of Capiz on Panay in particular has become synonymous with it. Beliefs were recorded by Spanish chroniclers from the colonial period onward, and the aswang remains the most widespread and feared figure in Filipino lower mythology."
+  ],
+  "recountings": [
+    {
+      "text": "The province of Capiz on Panay Island carries such a heavy aswang reputation that it is jokingly called the creature's hometown. Filipinos elsewhere will tease that a Capiznon flew in, and the stigma is strong enough that some Capiz natives running businesses in Manila lie about where they are from. Researchers later tied the reputation to X-linked Dystonia Parkinsonism, a genetic disorder concentrated in the region whose sudden, involuntary body contortions were once read as supernatural transformation. This is a widely-circulated regional reputation rather than a single person's account.",
+      "attribution": "The Aswang Project, the truth about the Aswang in Capiz",
+      "url": "https://www.aswangproject.com/aswang-in-capiz/"
+    },
+    {
+      "text": "The famous urban legend of Teniente Gimo, a barrio lieutenant of Duenas, Iloilo, tells of a family of aswang. As documented by folklorist Maximo Ramos, Gimo's daughter brought a classmate home to a fiesta; the guest overheard the family plotting to feast on her, swapped places with the daughter, and fled, so the aswang killed the daughter by mistake. Researchers note the tale may have been wartime or colonial propaganda used to brand resistance figures. This is a well-known retelling, not a firsthand report.",
+      "attribution": "The Aswang Project, Teniente Gimo",
+      "url": "https://www.aswangproject.com/teniente-gimo/"
+    },
+    {
+      "text": "In 2019 residents of Barangay Aguisan in Himamaylan, Negros Occidental reported being terrorized at night by what they believed was an aswang, claiming they found blood inside and outside their homes and capturing blurry footage of a winged shape on a roof. A Filipino folklore blogger reviewing the case argued each element had a mundane cause: the winged figure was most likely a kabog (fruit bat or flying fox), the blood probably from a rat or injured cat, and the human sighting attributable to overactive imagination or mass hysteria. This is a specific reported local incident plus a skeptic's analysis.",
+      "attribution": "The Moonlit Window blog, the Himamaylan Aswang sighting",
+      "url": "http://themoonlitwindow.blogspot.com/2019/05/the-himamaylan-aswang-sighting.html"
+    }
+  ],
+  "references": [
+    {
+      "title": "Aswang",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Aswang"
+    },
+    {
+      "title": "The truth about the ASWANG in Capiz",
+      "publisher": "The Aswang Project",
+      "url": "https://www.aswangproject.com/aswang-in-capiz/"
+    },
+    {
+      "title": "Teniente Gimo, Aswang: Crippling Superstition or Brilliant Tactic?",
+      "publisher": "The Aswang Project",
+      "url": "https://www.aswangproject.com/teniente-gimo/"
+    },
+    {
+      "title": "Investigating the monster in The Aswang Phenomenon",
+      "publisher": "GMA News Online",
+      "url": "https://www.gmanetwork.com/news/lifestyle/content/291789/investigating-the-monster-in-the-aswang-phenomenon/story/"
+    },
+    {
+      "title": "Science and the Supernatural: Filipino Folklore Through a Scientific Lens",
+      "publisher": "University of the Philippines Diliman, College of Science",
+      "url": "https://science.upd.edu.ph/science-and-the-supernatural-filipino-folklore-through-a-scientific-lens/"
+    },
+    {
+      "title": "The Himamaylan Aswang Sighting",
+      "publisher": "The Moonlit Window",
+      "url": "http://themoonlitwindow.blogspot.com/2019/05/the-himamaylan-aswang-sighting.html"
+    }
   ]
 }

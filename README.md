@@ -12,11 +12,13 @@ works offline and leaks nothing to third parties).
 
 ## How it works
 
-Each story is its own file in [`stories/`](stories/) — a **library of contained
-stories**. Site-level copy (masthead, sections, reserved codes) lives in
-[`site.json`](site.json). On every push, a GitHub Action runs
-[`build.js`](build.js), which renders everything into a self-contained `dist/`
-and deploys it to GitHub Pages.
+The site is a **codex**: `index.html` is a clickable list of every entry, and
+each story renders to its own page `<CODE>.html` (the full retelling, accounts
+gathered online, and the sources behind them). Each story is its own file in
+[`stories/`](stories/) — a **library of contained stories**. Site-level copy
+(masthead, sections, reserved codes) lives in [`site.json`](site.json). On every
+push, a GitHub Action runs [`build.js`](build.js), which renders everything into
+a self-contained `dist/` and deploys it to GitHub Pages.
 
 **You never build or commit HTML by hand.** Add a story file, push, done —
 the Action regenerates and publishes (usually live within a minute).
@@ -28,7 +30,9 @@ night-ledger/
 │   └── …
 ├── site.json               ← masthead, sections, "to be collected" list
 ├── build.js                ← renders dist/ from stories/ + site.json (zero deps)
-├── src/template.html       ← page shell + canonical CSS (design lives here)
+├── src/page.html           ← shared page shell (head, meta, {{CONTENT}})
+├── src/styles.css          ← canonical design / palette / typography
+├── src/styles-extra.css    ← codex list + per-entry page styles
 ├── fonts/                  ← self-hosted woff2 (Cinzel, Spectral, IBM Plex Mono)
 ├── favicon.svg             ← amber diamond mark
 ├── og-image.png            ← social/link-preview card (generated, committed)
@@ -64,7 +68,17 @@ Action. Nothing generated is committed.
        "Give the rule that governs it, and end on the thing that lingers."
      ],
      "note": [
-       "Variants, the ward against it, where it is told, and — if first-hand — who told you and when."
+       "Variants, the ward against it, where it is told; if first-hand, who told you and when."
+     ],
+     "recountings": [
+       {
+         "text": "A paraphrased 2 to 4 sentence account or retelling gathered online (never copied verbatim).",
+         "attribution": "who/where it came from, e.g. a forum thread or news outlet",
+         "url": "https://..."
+       }
+     ],
+     "references": [
+       { "title": "Page or article title", "publisher": "Wikipedia / a news outlet / a blog", "url": "https://..." }
      ]
    }
    ```
@@ -81,16 +95,23 @@ Action. Nothing generated is committed.
 
 ### Field reference
 
-- **`code`** — unique catalogue code; becomes the anchor (`#TH-001`). Prefix by
-  origin: `MY` Malay/Nusantara · `CN` Chinese · `SG` Singapore site · `TH` Thai
-  · `PH` Filipino · `JP` Japanese · `IN` South Asian.
-- **`section`** — must match a section `id` in `site.json` (`bestiary` or
-  `haunted-singapore`). To add a section, add it to `site.json` first.
+- **`code`** — unique catalogue code; becomes the page (`TH-001.html`) the codex
+  links to. Prefix by origin: `MY` Malay/Nusantara · `CN` Chinese · `SG`
+  Singapore site · `TH` Thai · `PH` Filipino · `JP` Japanese · `IN` South Asian ·
+  `AP` Apocrypha (invented).
+- **`section`** — must match a section `id` in `site.json` (`bestiary`,
+  `haunted-singapore`, or `apocrypha`). To add a section, add it to `site.json`
+  first.
 - **`order`** *(optional)* — integer; lower sorts first within a section
   (existing entries use 10, 20, 30…). Omit it and the story simply appends to
   its section (sorted by code). Add one only to place it precisely.
-- **`dread`** — integer 1–5; renders as ◆ of five.
+- **`dread`** — integer 1 to 5; renders as ◆ of five.
 - **`note`** *(optional)* — omit the field entirely for no Keeper's note.
+- **`recountings`** *(optional)* — array of accounts gathered online. Each is
+  `{ text, attribution, url }`. **Paraphrase**, never paste copyrighted text.
+  Renders under "Recounted online". Omit for `apocrypha` (invented) entries.
+- **`references`** *(optional)* — array of `{ title, publisher, url }` sources,
+  listed at the foot of the page under "Sources".
 - Filename should match the code (`stories/TH-001.json`) for tidiness; the build
   reads every `*.json` in `stories/` regardless of filename.
 
@@ -98,7 +119,8 @@ Action. Nothing generated is committed.
 > `site.json`.
 
 The build **fails loudly** (so a bad story can't ship) on: missing code/name,
-duplicate code, unknown section, or malformed JSON.
+duplicate code, unknown section, malformed JSON, or an em-dash / en-dash
+anywhere in shipped text (body, note, recountings, references, name, alias).
 
 ---
 
@@ -135,8 +157,8 @@ npm run og       # writes og-image.png (1200×630) — commit it
 ## Design notes
 
 - Palette, typography roles, and the `<article class="entry">` structure are the
-  canonical design and live in `src/template.html` — **implemented, not
-  redesigned**.
+  canonical design and live in `src/styles.css` (+ `src/styles-extra.css` for the
+  codex and per-entry pages); the page shell is `src/page.html`.
 - Fonts: **Cinzel** (display), **Spectral** (body), **IBM Plex Mono** (labels),
   self-hosted under `fonts/` (SIL Open Font License).
 - Honours `prefers-reduced-motion`, keyboard focus is visible, mobile-first.

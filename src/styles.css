@@ -1,33 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Night Ledger</title>
-<meta name="description" content="A private compendium of Southeast & East Asian horror folklore and Singapore haunted-place legends: creatures, hauntings, and uneasy ground, collected and catalogued.">
-<meta name="theme-color" content="#0b0a0c">
-<meta name="color-scheme" content="dark">
-<link rel="canonical" href="https://alvinhadisumarlin-prog.github.io/night-ledger/">
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
-
-<!-- Open Graph -->
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="The Night Ledger">
-<meta property="og:title" content="The Night Ledger">
-<meta property="og:description" content="Hauntings, creatures, and uneasy ground of Southeast & East Asia: collected, catalogued, kept.">
-<meta property="og:url" content="https://alvinhadisumarlin-prog.github.io/night-ledger/">
-<meta property="og:image" content="https://alvinhadisumarlin-prog.github.io/night-ledger/og-image.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-
-<!-- Twitter -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="The Night Ledger">
-<meta name="twitter:description" content="Hauntings, creatures, and uneasy ground of Southeast & East Asia: collected, catalogued, kept.">
-<meta name="twitter:image" content="https://alvinhadisumarlin-prog.github.io/night-ledger/og-image.png">
-
-<style>
-  /* ---------- self-hosted fonts (zero external dependencies) ---------- */
+/* ---------- self-hosted fonts (zero external dependencies) ---------- */
   @font-face{font-family:'Cinzel';font-style:normal;font-weight:500;font-display:swap;src:url('fonts/cinzel-500.woff2') format('woff2');}
   @font-face{font-family:'Cinzel';font-style:normal;font-weight:700;font-display:swap;src:url('fonts/cinzel-700.woff2') format('woff2');}
   @font-face{font-family:'Spectral';font-style:normal;font-weight:300;font-display:swap;src:url('fonts/spectral-300.woff2') format('woff2');}
@@ -386,40 +357,3 @@
     .entry{animation:none;opacity:1;transform:none;}
     html{scroll-behavior:auto;}
   }
-</style>
-</head>
-<body>
-<div class="wrap" id="top">
-
-  <header class="mast">
-    <p class="eyebrow">{{EYEBROW}}</p>
-    <h1>{{TITLE}}</h1>
-    <p class="sub">{{SUB}}</p>
-    <hr class="ember">
-  </header>
-
-  <p class="epigraph">
-    {{EPIGRAPH}}
-    <span>{{EPIGRAPH_SOURCE}}</span>
-  </p>
-
-  <div class="legend">
-    <h2>How the ledger is kept</h2>
-    <p>Every entry carries a <code>catalogue code</code> by origin: <code>MY</code> Malay/Nusantara · <code>CN</code> Chinese · <code>SG</code> Singapore site · <code>TH</code> Thai · <code>PH</code> Filipino · <code>JP</code> Japanese · <code>IN</code> South Asian.</p>
-    <p>Tags read in four bands: <strong style="color:var(--joss)">origin</strong>, <strong style="color:var(--smoke)">type</strong>, <strong style="color:#c8bfb1">region</strong>, and a <strong style="color:var(--oxblood-bright)">dread</strong> rating in diamonds (◆ of five).</p>
-    <p>Each retelling is followed where useful by a <strong style="color:var(--oxblood-bright)">Keeper's note</strong>: variants, wards against the thing, and where the tale is told.</p>
-  </div>
-
-  <nav class="index" aria-label="Index of entries">
-    <h2>The Index</h2>
-{{INDEX}}
-  </nav>
-
-{{SECTIONS}}
-  <footer>
-    {{FOOTER}}
-  </footer>
-
-</div>
-</body>
-</html>

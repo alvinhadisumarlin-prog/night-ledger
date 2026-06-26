@@ -4,7 +4,12 @@
   "order": 80,
   "name": "Krasue",
   "alias": "Ahp · Kasu · the floating head that hunts in the dark",
-  "tags": { "origin": "Thai", "type": "Detaching revenant", "region": "TH · LA · KH", "dread": 5 },
+  "tags": {
+    "origin": "Thai",
+    "type": "Detaching revenant",
+    "region": "TH · LA · KH",
+    "dread": 5
+  },
   "body": [
     "First there is a glow low over the paddy, soft and red like a lantern carried by no one, drifting against the wind. Then the smell finds you, a wet reek of blood and rot that no village should carry on a clean night. By day the woman next door is unremarkable, even beautiful, polite at the market and slow to anger. It is only after dark, when the rice fields breathe out their mist, that you might see what travels above them: a human head, lovely and lit from within, dragging beneath it the slick rope of its own organs, the heart and stomach and lungs still glistening as they sway.",
     "The Krasue hunts what is soft and unguarded. She craves blood, the leavings of birth, raw flesh, and filth, and so she haunts the places where these are found, the byre, the latrine, and above all the bed of a labouring woman. To recognise her is to understand the bargain at her heart: by night the head detaches and flies free to feed, while the body it abandoned lies hidden and helpless, and the head must return and rejoin it before dawn or be destroyed. Some say the curse is inherited, passed mother to daughter; some say it is the punishment of a sin in a former life, a debt the body pays nightly in its own glowing entrails.",
@@ -13,5 +18,49 @@
   "note": [
     "Wards are practical and old: thorny branches (often bamboo or the thorns of citrus and sang khee) ringed around the house and under the birthing floor to snare the trailing organs, and the certain kill, finding the abandoned body by daylight and hiding, moving, or destroying it so the head cannot reattach before dawn. The Krasue is the Thai member of a wider Southeast Asian family of detaching female revenants: the Malay and Indonesian Penanggalan, the Cambodian Ahp (Krasue), the Lao Kasu or Phi Kasu, the Balinese Leyak, and the Philippine Manananggal. Across the region the shared logic holds: a woman by day, a flying viscera-trailing head by night, vulnerable in the moment of return to her own flesh.",
     "The tale is told across Thailand and especially throughout Isan (the northeast), as well as in Laos and Cambodia, and remains a staple of regional horror cinema. Folk explanations range from inherited curse to karmic punishment for sorcery or for eating taboo food while alive."
+  ],
+  "recountings": [
+    {
+      "text": "In October 2023 villagers across the Mueang and Tha Wung districts of Lopburi province spread alarms on social media that they had encountered a Krasue, triggering a wave of fear through the community. Local authorities later debunked the scare, revealing the phantom was a chicken thief who had disguised himself with a mask of an elderly woman, faded straggly hair, and a set of fangs. A Saraburi resort owner had even offered a one million baht reward before withdrawing it over safety concerns. This is a specific documented news event.",
+      "attribution": "Thai.News, Thailand Breaking News",
+      "url": "https://thai.news/news/thailand/village-terrorized-by-ghost-unmasking-the-true-identity-of-the-dreaded-krasue-the-reality-will-shock-you"
+    },
+    {
+      "text": "Wikipedia records a string of widely circulated modern Krasue scares in Thailand, including 2008 CCTV footage from a Pathum Thani factory, mysterious floating lights reported in Ayutthaya province in 2014, and further sightings around 2023 in Lopburi and Ratchaburi provinces tied to glowing figures and unexplained livestock deaths. These are recurring rural panics passed around in news and social media rather than any one person's verified encounter.",
+      "attribution": "Wikipedia, Krasue (modern sightings)",
+      "url": "https://en.wikipedia.org/wiki/Krasue"
+    },
+    {
+      "text": "A standard folkloric retelling collected by the Thailand culture site Sirinya's Thailand describes the Phi Krasue as an ordinary-looking woman by day who at night detaches her glowing red-eyed head, trailing her entrails, and flies off to feed on the raw flesh, blood, and organs of the living, leaving her headless body hidden in the dark. The legend frames her as a woman cursed for practicing black magic. This is broadly shared traditional lore, not a personal account.",
+      "attribution": "Sirinya's Thailand, Phi Krasue Folklore",
+      "url": "https://sirinyas-thailand.de/phi-krasue-folklore/"
+    }
+  ],
+  "references": [
+    {
+      "title": "Krasue",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Krasue"
+    },
+    {
+      "title": "Village Terrorized by Ghost: Unmasking the True Identity of the Dreaded Krasue",
+      "publisher": "Thai.News",
+      "url": "https://thai.news/news/thailand/village-terrorized-by-ghost-unmasking-the-true-identity-of-the-dreaded-krasue-the-reality-will-shock-you"
+    },
+    {
+      "title": "Unveiling Thailand's Dark Phi Krasue Folklore",
+      "publisher": "Sirinya's Thailand",
+      "url": "https://sirinyas-thailand.de/phi-krasue-folklore/"
+    },
+    {
+      "title": "A Floating Head with Dangling Entrails, the Southeast Asian Krasue",
+      "publisher": "Intriguing Times (Medium)",
+      "url": "https://medium.com/intriguing-times/a-floating-head-with-dangling-entrails-the-southeast-asian-krasue-4d9dfb4813ff"
+    },
+    {
+      "title": "Krasue: Thailand's Floating Head Spirit of Horror and Hunger",
+      "publisher": "Gods and Monsters",
+      "url": "https://godsandmonsters.info/krasue/"
+    }
   ]
 }

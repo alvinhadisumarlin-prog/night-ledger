@@ -18,5 +18,49 @@
   "note": [
     "Documented history is narrower than the legend suggests: the complex was built as part of the prewar British military presence at Changi, and the wider Changi area carries genuine, well-recorded wartime suffering, including the nearby Changi Prison and the experiences of internees and POWs. The specific buildings most often filmed and photographed served for many years as a hospital after the war. Much of what circulates online conflates the documented wartime history of the district with the hospital structures themselves.",
     "It helps to separate three layers and label each claim by which it belongs to: the documented record (architecture, wartime context, the hospital's operating years), trespasser lore (cold spots, the nurse, faces at windows, accounts of feeling watched), and ghost-tour embellishment (named victims, precise body counts, dialogue attributed to spirits). The strongest entries flag which layer a claim sits in and resist inventing specific names or numbers that the record does not support. The site is fenced and entering is trespassing; respect both the law and the real history that sits underneath the folklore."
+  ],
+  "recountings": [
+    {
+      "text": "A widely shared listicle recounts a passerby on a bicycle who filmed the abandoned wards and later noticed a dark, indistinct figure appear at one of the upper windows before vanishing within seconds. This is trespasser and passerby lore rather than documented fact; the clip circulated online without any verified provenance, and the site itself stresses there is almost no substantial proof behind such claims.",
+      "attribution": "TheSmartLocal, history behind Singapore's most iconic haunted landmark",
+      "url": "https://thesmartlocal.com/read/old-changi-hospital/"
+    },
+    {
+      "text": "In reader comments on a Singapore heritage blog, a contributor describes slipping into the compound during her younger years with friends and feeling intensely uneasy inside the corridors, then reporting bouts of sleep paralysis and hallucinations at home afterward. The blog frames these as unverified anecdotes; it notes plainly that the haunted stories spread quickly but the sources were never confirmed.",
+      "attribution": "Reader account in comments on Remember Singapore",
+      "url": "https://remembersingapore.org/old-changi-hospital/"
+    },
+    {
+      "text": "Among the best-known pieces of lore is a 2017 video that circulated online purporting to show a nurse carrying a baby inside the derelict hospital, which reignited debate over whether the building is genuinely haunted. The footage was never authenticated, and the record treats it as folklore layered on top of the building's real wartime past rather than evidence.",
+      "attribution": "Wikipedia, Changi Hospital",
+      "url": "https://en.wikipedia.org/wiki/Changi_Hospital"
+    }
+  ],
+  "references": [
+    {
+      "title": "Changi Hospital",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Changi_Hospital"
+    },
+    {
+      "title": "Old Changi Hospital",
+      "publisher": "Remember Singapore",
+      "url": "https://remembersingapore.org/old-changi-hospital/"
+    },
+    {
+      "title": "Old Changi Hospital: The History Behind Singapore's Most Iconic Haunted Landmark",
+      "publisher": "TheSmartLocal",
+      "url": "https://thesmartlocal.com/read/old-changi-hospital/"
+    },
+    {
+      "title": "Old Changi Hospital",
+      "publisher": "State of Buildings",
+      "url": "https://stateofbuildings.sg/places/old-changi-hospital"
+    },
+    {
+      "title": "Old Changi Hospital: Where the Past Never Dies",
+      "publisher": "Vocal Media",
+      "url": "https://vocal.media/horror/old-changi-hospital-where-the-past-never-dies"
+    }
   ]
 }
